@@ -1,0 +1,12 @@
+faster-whisper
+llama-cpp-python
+huggingface-hub
+diffusers
+transformers
+accelerate
+torch
+google-api-python-client
+google-auth-oauthlib
+google-auth-httplib2
+requests
+scipy
