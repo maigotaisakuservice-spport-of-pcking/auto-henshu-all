@@ -3,7 +3,19 @@ import os
 import subprocess
 import random
 import math
+import re
 from mc_bridge import MinecraftBridge
+
+try:
+    from llama_cpp import Llama
+except ImportError:
+    Llama = None
+
+def get_llm():
+    model_path = os.environ.get("MODEL_PATH", "models/llama-3-8b-instruct.Q4_K_M.gguf")
+    if not os.path.exists(model_path) or Llama is None:
+        return None
+    return Llama(model_path=model_path, n_ctx=2048, verbose=False)
 
 def generate_bgm(output_path, duration_sec):
     """
@@ -62,23 +74,50 @@ def edit_video(input_video, input_audio, output_video):
     ]
     subprocess.run(cmd, capture_output=True)
 
-def check_compliance(text_list):
-    ng_words = ["死ね", "殺す", "殺戮", "虐殺", "村人", "kill", "murder"]
+def check_compliance(text_list, llm=None):
+    # Layer 1: Rigid Keyword Check
+    ng_words = [
+        "死ね", "殺す", "殺戮", "虐殺", "死んじゃえ",
+        "村人", "villager", "kill", "murder", "attack", "slaughter"
+    ]
     for text in text_list:
-        if any(ng in text.lower() for ng in ng_words):
+        if any(ng.lower() in text.lower() for ng in ng_words):
+            print(f"Rigid Compliance Failure: Keyword detected in '{text}'")
             return False
+
+    # Layer 2: AI-Powered Deep Compliance Check
+    if llm:
+        combined_text = "\n".join(text_list)
+        prompt = (
+            "Determine if the following text contains violence, inappropriate language, "
+            "or actions that involve killing peaceful NPCs (like villagers) in Minecraft. "
+            "Specifically, any mention of killing 'villagers' or 'killing' in general is strictly forbidden. "
+            "Return ONLY 'SAFE' or 'UNSAFE'.\n\n"
+            f"Text: {combined_text}"
+        )
+        try:
+            output = llm(f"User: {prompt}\nAssistant:", max_tokens=10, stop=["User:"])
+            result = output['choices'][0]['text'].strip().upper()
+            if "UNSAFE" in result:
+                print(f"AI Compliance Failure: AI flagged content as UNSAFE.")
+                return False
+            print("AI Compliance Check: PASSED")
+        except Exception as e:
+            print(f"AI Compliance Error (falling back to rigid check): {e}")
+
     return True
 
 def produce_batch(limit=5):
     if not os.path.exists("planning.json"): return
     with open("planning.json", "r", encoding="utf-8") as f: plan = json.load(f)
 
+    llm = get_llm()
     processed = 0
     for entry in plan:
         if entry["status"] != "pending" or processed >= limit: continue
 
         print(f"Processing Week {entry['week']}")
-        if not check_compliance([entry['title'], entry['description'], entry['ai_instructions']]):
+        if not check_compliance([entry['title'], entry['description'], entry['ai_instructions']], llm):
             entry['status'] = 'rejected'
             continue
 
