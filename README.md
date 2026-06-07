@@ -13,10 +13,23 @@
 
 ## セットアップ手順
 
-### 1. YouTube サービスアカウントの取得と設定
-YouTube APIをサービスアカウント経由で利用するための手順は以下の通りです。
+### 1. YouTube API の認証設定
+ブランドアカウントを使用している場合、サービスアカウントよりも **OAuth2（クライアントID、シークレット、リフレッシュトークン）** を使用する方が認証のトラブルが少なく、確実です。
 
-#### 1-1. Google Cloud Console での作業
+#### 1-1. OAuth2 認証情報の取得（推奨）
+1.  [Google Cloud Console](https://console.cloud.google.com/) でプロジェクトを作成し、**YouTube Data API v3** を有効にします。
+2.  「OAuth 同意画面」を設定します（User Typeは「外部」を選択し、テストユーザーに自分のメアドを追加）。
+3.  「認証情報」>「+ 認証情報を作成」>「OAuth クライアント ID」を選択します。
+    - アプリケーションの種類: **「デスクトップ アプリ」**
+4.  表示された **クライアント ID** と **クライアント シークレット** を控えます。
+5.  **リフレッシュトークンの取得:** [Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) を使用して、以下のスコープでリフレッシュトークンを取得します。
+    - `https://www.googleapis.com/auth/youtube.upload`
+    - 右上の設定アイコン（歯車）から「Use your own OAuth credentials」にチェックを入れ、IDとシークレットを入力して承認プロセスを完了させてください。
+
+#### 1-2. サービスアカウントの取得と設定（代替案）
+YouTube APIをサービスアカウント経由で利用する場合の手順です。
+
+#### 1-2-1. Google Cloud Console での作業
 1.  [Google Cloud Console](https://console.cloud.google.com/) にアクセスし、プロジェクトを選択（または新規作成）します。
 2.  **APIの有効化:** 「APIとサービス」>「ライブラリ」から **"YouTube Data API v3"** を検索し、**「有効にする」**をクリックします。
 3.  **サービスアカウントの作成:** 「APIとサービス」>「認証情報」をクリックし、画面上部の**「+ 認証情報を作成」**から**「サービスアカウント」**を選択します。
@@ -42,8 +55,15 @@ YouTube APIをサービスアカウント経由で利用するための手順は
     - サービスアカウントに「管理者」以上の権限を付与することで、API経由での動画投稿が可能になります。
 
 ### 2. GitHub Secrets の設定
-リポジトリの `Settings > Secrets and variables > Actions` に以下を登録します。
-- `YOUTUBE_SERVICE_ACCOUNT_JSON`: ダウンロードしたサービスアカウントのJSONファイルの中身をそのまま貼り付けてください。
+リポジトリの `Settings > Secrets and variables > Actions` に、使用する方法に合わせて以下を登録します。
+
+#### OAuth2 を使用する場合（推奨）
+- `YOUTUBE_CLIENT_ID`: 取得したクライアントID
+- `YOUTUBE_CLIENT_SECRET`: 取得したクライアントシークレット
+- `YOUTUBE_REFRESH_TOKEN`: 取得したリフレッシュトークン
+
+#### サービスアカウントを使用する場合
+- `YOUTUBE_SERVICE_ACCOUNT_JSON`: サービスアカウントのJSONファイルの中身
 
 ### 3. LLMモデルの準備
 - LLMモデル（Llama-3-8B GGUF）は、GitHub Actions の実行時に**自動的にダウンロードされる**よう設定されています。手動で配置する必要はありません。

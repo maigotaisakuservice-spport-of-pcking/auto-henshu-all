@@ -3,6 +3,8 @@ import os
 import time
 import random
 from google.oauth2 import service_account
+from google.oauth2.credentials import Credentials
+from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from googleapiclient.errors import HttpError
@@ -10,17 +12,38 @@ from googleapiclient.errors import HttpError
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 
 def get_youtube_client():
+    # 1. Try OAuth2 Refresh Token (Recommended for Brand Accounts)
+    client_id = os.environ.get("YOUTUBE_CLIENT_ID")
+    client_secret = os.environ.get("YOUTUBE_CLIENT_SECRET")
+    refresh_token = os.environ.get("YOUTUBE_REFRESH_TOKEN")
+
+    if client_id and client_secret and refresh_token:
+        try:
+            creds = Credentials(
+                None,
+                refresh_token=refresh_token,
+                token_uri="https://oauth2.googleapis.com/token",
+                client_id=client_id,
+                client_secret=client_secret,
+                scopes=SCOPES
+            )
+            creds.refresh(Request())
+            return build('youtube', 'v3', credentials=creds)
+        except Exception as e:
+            print(f"OAuth2 Refresh failed: {e}")
+
+    # 2. Fallback to Service Account
     creds_json = os.environ.get("YOUTUBE_SERVICE_ACCOUNT_JSON")
-    if not creds_json:
-        print("YOUTUBE_SERVICE_ACCOUNT_JSON not found.")
-        return None
-    try:
-        info = json.loads(creds_json)
-        creds = service_account.Credentials.from_service_account_info(info, scopes=SCOPES)
-        return build('youtube', 'v3', credentials=creds)
-    except Exception as e:
-        print(f"Failed to initialize YouTube client: {e}")
-        return None
+    if creds_json:
+        try:
+            info = json.loads(creds_json)
+            creds = service_account.Credentials.from_service_account_info(info, scopes=SCOPES)
+            return build('youtube', 'v3', credentials=creds)
+        except Exception as e:
+            print(f"Service Account failed: {e}")
+
+    print("No valid YouTube credentials found (OAuth2 or Service Account).")
+    return None
 
 def upload_video(youtube, file_path, title, description, hashtags, scheduled_date, privacy="private"):
     if not os.path.exists(file_path):
