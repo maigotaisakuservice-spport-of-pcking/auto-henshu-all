@@ -23,9 +23,9 @@ jobs:
       - name: Download Llama-3 Model
         run: |
           mkdir -p models
-          # Using a publicly available small GGUF if possible, or placeholder
-          # In reality, the user should provide a link or we use a standard one.
-          curl -L "https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf" -o models/llama-3-8b-instruct.Q4_K_M.gguf
+          if [ ! -f "models/llama-3-8b-instruct.Q4_K_M.gguf" ]; then
+            curl -L "https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf" -o models/llama-3-8b-instruct.Q4_K_M.gguf
+          fi
 
       - name: Run Planning Script
         run: python scripts/generate_plan.py

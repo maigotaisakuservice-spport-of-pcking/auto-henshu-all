@@ -24,8 +24,8 @@
 - `YOUTUBE_SERVICE_ACCOUNT_JSON`: ダウンロードしたサービスアカウントのJSONファイルの中身をそのまま貼り付けてください。
 
 ### 3. LLMモデルの準備
-- `models/` ディレクトリに、Llama-3-8B などの GGUF 形式のモデルを配置してください。
-- ファイル名は `scripts/generate_plan.py` 内の設定に合わせてください（デフォルト: `llama-3-8b-instruct.Q4_K_M.gguf`）。
+- LLMモデル（Llama-3-8B GGUF）は、GitHub Actions の実行時に**自動的にダウンロードされる**よう設定されています。手動で配置する必要はありません。
+- モデルを変更したい場合は、ワークフローファイル（`.github/workflows/*.yml`）内の `curl` コマンドのURLを編集してください。
 
 ## 使い方
 

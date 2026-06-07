@@ -23,6 +23,13 @@ jobs:
       - name: Minecraft Setup
         run: bash scripts/setup_mc.sh
 
+      - name: Download Llama-3 Model
+        run: |
+          mkdir -p models
+          if [ ! -f "models/llama-3-8b-instruct.Q4_K_M.gguf" ]; then
+            curl -L "https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf" -o models/llama-3-8b-instruct.Q4_K_M.gguf
+          fi
+
       - name: Produce Videos (Batch of 5)
         run: python scripts/produce_video.py
         env:
