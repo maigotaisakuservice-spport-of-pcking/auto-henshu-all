@@ -1,0 +1,782 @@
+[
+    {
+        "week": 1,
+        "title": "Minecraft Building Week 1",
+        "description": "Week 1 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-06-21",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 2,
+        "title": "Minecraft Redstone Week 2",
+        "description": "Week 2 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-06-28",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 3,
+        "title": "Minecraft Discovery Week 3",
+        "description": "Week 3 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-07-05",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 4,
+        "title": "Minecraft Survival Week 4",
+        "description": "Week 4 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-07-12",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 5,
+        "title": "Minecraft Building Week 5",
+        "description": "Week 5 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-07-19",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 6,
+        "title": "Minecraft Redstone Week 6",
+        "description": "Week 6 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-07-26",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 7,
+        "title": "Minecraft Discovery Week 7",
+        "description": "Week 7 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-08-02",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 8,
+        "title": "Minecraft Survival Week 8",
+        "description": "Week 8 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-08-09",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 9,
+        "title": "Minecraft Building Week 9",
+        "description": "Week 9 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-08-16",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 10,
+        "title": "Minecraft Redstone Week 10",
+        "description": "Week 10 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-08-23",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 11,
+        "title": "Minecraft Discovery Week 11",
+        "description": "Week 11 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-08-30",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 12,
+        "title": "Minecraft Survival Week 12",
+        "description": "Week 12 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-09-06",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 13,
+        "title": "Minecraft Building Week 13",
+        "description": "Week 13 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-09-13",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 14,
+        "title": "Minecraft Redstone Week 14",
+        "description": "Week 14 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-09-20",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 15,
+        "title": "Minecraft Discovery Week 15",
+        "description": "Week 15 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-09-27",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 16,
+        "title": "Minecraft Survival Week 16",
+        "description": "Week 16 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-10-04",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 17,
+        "title": "Minecraft Building Week 17",
+        "description": "Week 17 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-10-11",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 18,
+        "title": "Minecraft Redstone Week 18",
+        "description": "Week 18 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-10-18",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 19,
+        "title": "Minecraft Discovery Week 19",
+        "description": "Week 19 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-10-25",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 20,
+        "title": "Minecraft Survival Week 20",
+        "description": "Week 20 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-11-01",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 21,
+        "title": "Minecraft Building Week 21",
+        "description": "Week 21 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-11-08",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 22,
+        "title": "Minecraft Redstone Week 22",
+        "description": "Week 22 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-11-15",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 23,
+        "title": "Minecraft Discovery Week 23",
+        "description": "Week 23 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-11-22",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 24,
+        "title": "Minecraft Survival Week 24",
+        "description": "Week 24 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-11-29",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 25,
+        "title": "Minecraft Building Week 25",
+        "description": "Week 25 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2026-12-06",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 26,
+        "title": "Minecraft Redstone Week 26",
+        "description": "Week 26 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2026-12-13",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 27,
+        "title": "Minecraft Discovery Week 27",
+        "description": "Week 27 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2026-12-20",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 28,
+        "title": "Minecraft Survival Week 28",
+        "description": "Week 28 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2026-12-27",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 29,
+        "title": "Minecraft Building Week 29",
+        "description": "Week 29 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-01-03",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 30,
+        "title": "Minecraft Redstone Week 30",
+        "description": "Week 30 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-01-10",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 31,
+        "title": "Minecraft Discovery Week 31",
+        "description": "Week 31 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-01-17",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 32,
+        "title": "Minecraft Survival Week 32",
+        "description": "Week 32 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-01-24",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 33,
+        "title": "Minecraft Building Week 33",
+        "description": "Week 33 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-01-31",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 34,
+        "title": "Minecraft Redstone Week 34",
+        "description": "Week 34 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-02-07",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 35,
+        "title": "Minecraft Discovery Week 35",
+        "description": "Week 35 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-02-14",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 36,
+        "title": "Minecraft Survival Week 36",
+        "description": "Week 36 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-02-21",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 37,
+        "title": "Minecraft Building Week 37",
+        "description": "Week 37 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-02-28",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 38,
+        "title": "Minecraft Redstone Week 38",
+        "description": "Week 38 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-03-07",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 39,
+        "title": "Minecraft Discovery Week 39",
+        "description": "Week 39 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-03-14",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 40,
+        "title": "Minecraft Survival Week 40",
+        "description": "Week 40 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-03-21",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 41,
+        "title": "Minecraft Building Week 41",
+        "description": "Week 41 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-03-28",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 42,
+        "title": "Minecraft Redstone Week 42",
+        "description": "Week 42 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-04-04",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 43,
+        "title": "Minecraft Discovery Week 43",
+        "description": "Week 43 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-04-11",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 44,
+        "title": "Minecraft Survival Week 44",
+        "description": "Week 44 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-04-18",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 45,
+        "title": "Minecraft Building Week 45",
+        "description": "Week 45 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-04-25",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 46,
+        "title": "Minecraft Redstone Week 46",
+        "description": "Week 46 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-05-02",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 47,
+        "title": "Minecraft Discovery Week 47",
+        "description": "Week 47 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-05-09",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 48,
+        "title": "Minecraft Survival Week 48",
+        "description": "Week 48 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-05-16",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 49,
+        "title": "Minecraft Building Week 49",
+        "description": "Week 49 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Building"
+        ],
+        "scheduled_at": "2027-05-23",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 50,
+        "title": "Minecraft Redstone Week 50",
+        "description": "Week 50 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Redstone"
+        ],
+        "scheduled_at": "2027-05-30",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 51,
+        "title": "Minecraft Discovery Week 51",
+        "description": "Week 51 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Discovery"
+        ],
+        "scheduled_at": "2027-06-06",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
+        "week": 52,
+        "title": "Minecraft Survival Week 52",
+        "description": "Week 52 content",
+        "hashtags": [
+            "Minecraft",
+            "Shorts",
+            "Survival"
+        ],
+        "scheduled_at": "2027-06-13",
+        "ai_instructions": "explore",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    }
+]

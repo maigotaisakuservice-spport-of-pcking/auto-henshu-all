@@ -1,0 +1,118 @@
+import json
+import os
+import subprocess
+import random
+import math
+from mc_bridge import MinecraftBridge
+
+def generate_bgm(output_path, duration_sec):
+    """
+    Generates a simple rhythmic BGM using ffmpeg's sine wave and noise filters.
+    A lightweight alternative to ML-based generation that fits in 4GB RAM.
+    """
+    print(f"Generating algorithmic BGM ({duration_sec}s)...")
+
+    # Create a simple beat using pulse and sine waves
+    # This creates a 'gaming' style lo-fi beat
+    filter_expr = (
+        "sine=f=440:d={d}:b=0.5,apad=pad_len=20000[s];"
+        "noise=d={d}:c=white:v=0.01[n];"
+        "[s][n]amix=inputs=2[a]"
+    ).format(d=duration_sec)
+
+    # More complex: alternating frequencies for a melody
+    melody = ""
+    for i in range(int(duration_sec)):
+        freq = random.choice([261.63, 293.66, 329.63, 349.23, 392.00]) # C4 to G4
+        melody += f"sine=f={freq}:d=1,"
+    melody = melody.rstrip(",") + f"[m];[m]volume=0.3[mv];"
+
+    # Basic beat
+    beat = "sine=f=60:d=0.1,adelay=500|500,aloop=loop=-1:size=22050[b];[b]volume=0.8[bv];"
+
+    final_filter = f"{melody}{beat}[mv][bv]amix=inputs=2[out]"
+
+    cmd = [
+        "ffmpeg", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
+        "-filter_complex", final_filter, "-map", "[out]",
+        "-t", str(duration_sec), "-c:a", "libmp3lame", output_path, "-y"
+    ]
+
+    try:
+        subprocess.run(cmd, capture_output=True, check=True)
+    except:
+        # Fallback to simple noise if filter is too complex
+        subprocess.run(["ffmpeg", "-f", "lavfi", "-i", f"noise=d={duration_sec}", "-t", str(duration_sec), output_path, "-y"], capture_output=True)
+
+def edit_video(input_video, input_audio, output_video):
+    print(f"Editing Shorts: {output_video}")
+    # 9:16 vertical crop and scaling
+    filter_complex = (
+        "[0:v]scale=w=trunc(ih*9/16/2)*2:h=ih,setsar=1,boxblur=20:20[bg];"
+        "[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease[fg];"
+        "[bg][fg]overlay=(W-w)/2:(H-h)/2[v];"
+        "[1:a]volume=0.6[a]"
+    )
+    cmd = [
+        "ffmpeg", "-i", input_video, "-i", input_audio,
+        "-filter_complex", filter_complex,
+        "-map", "[v]", "-map", "[a]",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "26",
+        "-c:a", "aac", "-shortest", output_video, "-y"
+    ]
+    subprocess.run(cmd, capture_output=True)
+
+def check_compliance(text_list):
+    ng_words = ["死ね", "殺す", "殺戮", "虐殺", "村人", "kill", "murder"]
+    for text in text_list:
+        if any(ng in text.lower() for ng in ng_words):
+            return False
+    return True
+
+def produce_batch(limit=5):
+    if not os.path.exists("planning.json"): return
+    with open("planning.json", "r", encoding="utf-8") as f: plan = json.load(f)
+
+    processed = 0
+    for entry in plan:
+        if entry["status"] != "pending" or processed >= limit: continue
+
+        print(f"Processing Week {entry['week']}")
+        if not check_compliance([entry['title'], entry['description'], entry['ai_instructions']]):
+            entry['status'] = 'rejected'
+            continue
+
+        raw_video = f"raw_{entry['week']}.mp4"
+
+        # 1. AI Minecraft Recording
+        bridge = MinecraftBridge()
+        bridge.start_display()
+        bridge.start_recording(raw_video)
+        bridge.start_minecraft()
+
+        # Pass the instruction to Baritone
+        bridge.send_baritone_command(entry["ai_instructions"])
+
+        # Record for 60 seconds of action
+        time.sleep(60)
+
+        bridge.stop_all()
+
+        bgm_file = f"bgm_{entry['week']}.mp3"
+        generate_bgm(bgm_file, 60)
+
+        final_video = f"final_{entry['week']}.mp4"
+        edit_video(raw_video, bgm_file, final_video)
+
+        entry["status"] = "produced"
+        entry["video_path"] = os.path.abspath(final_video)
+        processed += 1
+
+        if os.path.exists(raw_video): os.remove(raw_video)
+        if os.path.exists(bgm_file): os.remove(bgm_file)
+
+    with open("planning.json", "w", encoding="utf-8") as f:
+        json.dump(plan, f, indent=4, ensure_ascii=False)
+
+if __name__ == "__main__":
+    produce_batch()

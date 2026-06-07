@@ -1,0 +1,42 @@
+name: Daily Video Production
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at 00:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  produce-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb ffmpeg openjdk-8-jre
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib llama-cpp-python
+
+      - name: Minecraft Setup
+        run: bash scripts/setup_mc.sh
+
+      - name: Produce Videos (Batch of 5)
+        run: python scripts/produce_video.py
+        env:
+          MODEL_PATH: "models/llama-3-8b-instruct.Q4_K_M.gguf"
+
+      - name: Upload to YouTube
+        run: python scripts/upload_youtube.py
+        env:
+          YOUTUBE_SERVICE_ACCOUNT_JSON: ${{ secrets.YOUTUBE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Commit and Push Updated Plan
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add planning.json
+          git commit -m "chore: update planning.json after production [skip ci]" || echo "No changes to commit"
+          git push
