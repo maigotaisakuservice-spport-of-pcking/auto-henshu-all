@@ -13,84 +13,51 @@
 
 ## セットアップ手順
 
-### 1. YouTube API の認証設定
-ブランドアカウントを使用している場合、サービスアカウントよりも **OAuth2（クライアントID、シークレット、リフレッシュトークン）** を使用する方が認証のトラブルが少なく、確実です。
-※注意: **アプリパスワードは YouTube API では使用できません。** 必ず以下の OAuth2 手順に従ってください。
+### 1. YouTube API の認証設定 (OAuth2方式)
+ブランドアカウントを使用している場合、セキュリティと確実性の観点から **OAuth2（クライアントID、シークレット、リフレッシュトークン）** を使用します。
+※注意: アプリパスワードは YouTube API では使用できません。
 
-#### 1-1. OAuth2 認証情報の取得（推奨）
+#### 1-1. Google Cloud Console での作業
 1.  [Google Cloud Console](https://console.cloud.google.com/) でプロジェクトを作成し、**YouTube Data API v3** を有効にします。
-2.  「OAuth 同意画面」を設定します（User Typeは「外部」を選択し、テストユーザーに自分のメアドを追加）。
+2.  「OAuth 同意画面」を設定します。
+    - User Type: 「外部」を選択。
+    - アプリ名、ユーザーサポートメールなどを入力。
+    - **重要:** 「テストユーザー」に自分のメールアドレスを追加してください。
 3.  「認証情報」>「+ 認証情報を作成」>「OAuth クライアント ID」を選択します。
     - アプリケーションの種類: **「デスクトップ アプリ」**
-4.  表示された **クライアント ID** と **クライアント シークレット** を控えます。
-5.  **リフレッシュトークンの取得:** [Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) を使用して、以下のスコープでリフレッシュトークンを取得します。
-    - `https://www.googleapis.com/auth/youtube.upload`
-    - 右上の設定アイコン（歯車）から「Use your own OAuth credentials」にチェックを入れ、IDとシークレットを入力して承認プロセスを完了させてください。
+    - 名前を入力して「作成」をクリック。
+4.  表示された **クライアント ID** と **クライアント シークレット** を必ず手元に控えてください。
 
-#### 1-2. サービスアカウントの取得と設定（代替案）
-YouTube APIをサービスアカウント経由で利用する場合の手順です。
-
-#### 1-2-1. Google Cloud Console での作業
-1.  [Google Cloud Console](https://console.cloud.google.com/) にアクセスし、プロジェクトを選択（または新規作成）します。
-2.  **APIの有効化:** 「APIとサービス」>「ライブラリ」から **"YouTube Data API v3"** を検索し、**「有効にする」**をクリックします。
-3.  **サービスアカウントの作成:** 「APIとサービス」>「認証情報」をクリックし、画面上部の**「+ 認証情報を作成」**から**「サービスアカウント」**を選択します。
-    - サービスアカウント名（例: `minecraft-ai-uploader`）を入力し「完了」をクリックします。
-4.  **JSONキーのダウンロード:** 作成したサービスアカウントのメールアドレスをクリックし、**「キー」**タブを選択します。
-    - **「鍵を追加」** > **「新しい鍵を作成」** をクリックします。
-    - キーのタイプとして **「JSON」** を選択し、**「作成」**をクリックするとファイルがダウンロードされます。
-    - **重要:** このJSONファイルの中身が GitHub Secrets に設定する `YOUTUBE_SERVICE_ACCOUNT_JSON` の値になります。
-
-#### 1-2. ブランドアカウントでの権限付与（必須）
-ブランドアカウントを使用している場合、通常のYouTube Studioの設定とは手順が異なります。以下の手順でサービスアカウントに権限を付与してください。
-
-1.  **YouTube Studio の権限設定:**
-    - YouTube Studio にログインし、「設定」>「権限」を開きます。
-    - 「権限の管理」ボタンが表示されている場合はそれをクリックします（ブランドアカウントの設定ページに飛びます）。
-2.  **ブランドアカウントの詳細設定:**
-    - 「権限を管理」青いボタンを再度クリックします（Googleの再ログインを求められる場合があります）。
-3.  **サービスアカウントの招待:**
-    - 右上の「ユーザーを招待」（人のアイコンに＋がついたもの）をクリックします。
-    - 作成したサービスアカウントのメールアドレス（`xxx@xxx.iam.gserviceaccount.com`）を入力します。
-4.  **役割の選択:**
-    - 役割として **「オーナー」** または **「管理者」** を選択し、「招待」をクリックします。
-    - サービスアカウントに「管理者」以上の権限を付与することで、API経由での動画投稿が可能になります。
+#### 1-2. リフレッシュトークンの取得
+1.  [Google OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) にアクセスします。
+2.  右上の設定アイコン（歯車）をクリックし、以下を設定します。
+    - **OAuth flow:** `Server-side`
+    - **Access type:** `Offline`
+    - **Use your own OAuth credentials:** チェックを入れ、上記で控えた **Client ID** と **Client Secret** を入力します。
+3.  左側の「Step 1: Select & authorize APIs」の入力欄に `https://www.googleapis.com/auth/youtube.upload` を入力し、**「Authorize APIs」**をクリックします。
+4.  Googleアカウントの選択画面が出るので、**動画を投稿したいチャンネル（ブランドアカウント）を選択**して承認します。
+5.  「Step 2: Exchange authorization code for tokens」で **「Exchange authorization code for tokens」** をクリックします。
+6.  表示された **Refresh Token** を控えます。
 
 ### 2. GitHub Secrets の設定
-リポジトリの `Settings > Secrets and variables > Actions` に、使用する方法に合わせて以下を登録します。
-
-#### OAuth2 を使用する場合（推奨）
+リポジトリの `Settings > Secrets and variables > Actions` に以下を登録します。
 - `YOUTUBE_CLIENT_ID`: 取得したクライアントID
 - `YOUTUBE_CLIENT_SECRET`: 取得したクライアントシークレット
 - `YOUTUBE_REFRESH_TOKEN`: 取得したリフレッシュトークン
 
-#### サービスアカウントを使用する場合
-- `YOUTUBE_SERVICE_ACCOUNT_JSON`: サービスアカウントのJSONファイルの中身
-
 ### 3. LLMモデルの準備
 - LLMモデル（Llama-3-8B GGUF）は、GitHub Actions の実行時に**自動的にダウンロードされる**よう設定されています。手動で配置する必要はありません。
-- モデルを変更したい場合は、ワークフローファイル（`.github/workflows/*.yml`）内の `curl` コマンドのURLを編集してください。
 
 ## 使い方
 
 1.  **企画の作成:**
     - GitHub Actions の `Generate 52-Week Plan` ワークフローを手動で実行（workflow_dispatch）します。
-    - `planning.json` がリポジトリに生成されます。
-
 2.  **自動運用:**
-    - `Daily Video Production` ワークフローが毎日自動的に起動します。
-    - 毎日5本ずつ動画が作成され、YouTubeに指定したスケジュールで予約投稿されます。
-    - 進捗は `planning.json` 内の `status` フィールドで確認できます。
-
-## ディレクトリ構造
-- `scripts/`: メインロジック（企画生成、動画制作、アップロード）
-- `.github/workflows/`: 自動実行設定
-- `minecraft/`: マイクラの実行環境（実行時に構築）
-- `planning.json`: 1年分の進捗管理ファイル
+    - `Daily Video Production` ワークフローが毎日自動的に起動し、5本ずつ投稿予約を行います。
 
 ## コンプライアンスについて
-`scripts/produce_video.py` 内の `ng_words` リストを編集することで、フィルタリングする単語を追加できます。
-デフォルトでは「死ね」「殺す」「殺戮」などが設定されています。
+`scripts/produce_video.py` にてAI（LLM）が動画内容を分析し、不適切な表現や行動（村人の殺害など）が含まれる場合は自動的に制作をスキップします。
 
 ## 注意事項
 - 標準Runnerの制限時間（6時間）に収まるよう、1日5本に制限しています。
-- YouTube APIの制限により、1日に投稿できる本数はアカウントの状態に依存します。
+- YouTube APIの制限（クォータ）により、1日に投稿できる本数は制限される場合があります。
