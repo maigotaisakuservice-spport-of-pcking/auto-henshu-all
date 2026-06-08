@@ -4,6 +4,7 @@ import subprocess
 import random
 import math
 import re
+import time
 from mc_bridge import MinecraftBridge
 
 try:
@@ -126,8 +127,13 @@ def produce_batch(limit=5):
         # 1. AI Minecraft Recording
         bridge = MinecraftBridge()
         bridge.start_display()
-        bridge.start_recording(raw_video)
         bridge.start_minecraft()
+
+        # Wait for Minecraft to boot and load (Crucial for headless)
+        print("Waiting for Minecraft to initialize (90s)...")
+        time.sleep(90)
+
+        bridge.start_recording(raw_video)
 
         # Pass the instruction to Baritone
         bridge.send_baritone_command(entry["ai_instructions"])

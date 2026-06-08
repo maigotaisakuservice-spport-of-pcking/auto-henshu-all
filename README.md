@@ -15,6 +15,7 @@
 
 ### 1. YouTube API の認証設定
 ブランドアカウントを使用している場合、サービスアカウントよりも **OAuth2（クライアントID、シークレット、リフレッシュトークン）** を使用する方が認証のトラブルが少なく、確実です。
+※注意: **アプリパスワードは YouTube API では使用できません。** 必ず以下の OAuth2 手順に従ってください。
 
 #### 1-1. OAuth2 認証情報の取得（推奨）
 1.  [Google Cloud Console](https://console.cloud.google.com/) でプロジェクトを作成し、**YouTube Data API v3** を有効にします。
