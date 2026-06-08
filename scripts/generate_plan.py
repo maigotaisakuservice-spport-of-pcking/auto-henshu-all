@@ -13,7 +13,8 @@ def get_llm():
     model_path = os.environ.get("MODEL_PATH", "models/llama-3-8b-instruct.Q4_K_M.gguf")
     if not os.path.exists(model_path) or Llama is None:
         return None
-    return Llama(model_path=model_path, n_ctx=2048, verbose=False)
+    # Reduce n_ctx to save memory and use multiple threads for CPU speedup
+    return Llama(model_path=model_path, n_ctx=1024, n_threads=4, verbose=True)
 
 def robust_json_parse(text):
     try:
@@ -54,7 +55,9 @@ def generate_plan():
 
         if llm:
             prompt = f"Create a Minecraft Short (60s). Theme: {theme}. Return JSON: {{'title': '...', 'description': '...', 'instructions': 'Baritone command'}}"
+            print(f"Inference starting for Week {i}...")
             output = llm(f"User: {prompt}\nAssistant:", max_tokens=256, stop=["User:"])
+            print(f"Inference finished for Week {i}.")
             data = robust_json_parse(output['choices'][0]['text'])
             if data:
                 title = data.get("title", title)

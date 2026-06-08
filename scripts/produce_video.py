@@ -16,7 +16,8 @@ def get_llm():
     model_path = os.environ.get("MODEL_PATH", "models/llama-3-8b-instruct.Q4_K_M.gguf")
     if not os.path.exists(model_path) or Llama is None:
         return None
-    return Llama(model_path=model_path, n_ctx=2048, verbose=False)
+    # Optimized for GitHub Actions CPU (2 cores)
+    return Llama(model_path=model_path, n_ctx=512, n_threads=2, verbose=True)
 
 def generate_bgm(output_path, duration_sec):
     """
