@@ -59,19 +59,14 @@ def generate_bgm(output_path, duration_sec):
         subprocess.run(["ffmpeg", "-f", "lavfi", "-i", f"noise=d={duration_sec}", "-t", str(duration_sec), output_path, "-y"], capture_output=True)
 
 def edit_video(input_video, input_audio, output_video):
-    print(f"Editing Shorts: {output_video}")
-    # 9:16 vertical crop and scaling
-    filter_complex = (
-        "[0:v]scale=w=trunc(ih*9/16/2)*2:h=ih,setsar=1,boxblur=20:20[bg];"
-        "[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease[fg];"
-        "[bg][fg]overlay=(W-w)/2:(H-h)/2[v];"
-        "[1:a]volume=0.6[a]"
-    )
+    print(f"Editing Regular Video (16:9): {output_video}")
+    # Maintain original aspect ratio (16:9 720p)
+    # Just merge audio and normalize volume
     cmd = [
         "ffmpeg", "-i", input_video, "-i", input_audio,
-        "-filter_complex", filter_complex,
-        "-map", "[v]", "-map", "[a]",
-        "-c:v", "libx264", "-preset", "veryfast", "-crf", "26",
+        "-filter_complex", "[1:a]volume=0.6[a]",
+        "-map", "0:v", "-map", "[a]",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
         "-c:a", "aac", "-shortest", output_video, "-y"
     ]
     subprocess.run(cmd, capture_output=True)

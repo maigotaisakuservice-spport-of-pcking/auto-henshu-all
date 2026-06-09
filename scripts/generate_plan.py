@@ -32,9 +32,9 @@ def generate_plan():
 
     # Mandatory core hashtags as requested by the user
     mandatory_hashtags = [
-        "マインクラフト", "マイクラ", "minecraftshorts", "まいくら", "minecraft",
+        "マインクラフト", "マイクラ", "まいくら", "minecraft",
         "実況", "実況者", "ゲーム", "ゲーム実況", "テキパキパソコン",
-        "youtubeshorts", "youtubeshort", "youtubevideo", "youtubevideos"
+        "youtubevideo", "youtubevideos"
     ]
 
     # 0. Special Initial Video: THE IMPOSSIBLE DROP
@@ -62,8 +62,8 @@ def generate_plan():
 
         if llm:
             system_prompt = (
-                "You are a viral Minecraft YouTuber expert at YouTube Shorts. "
-                "Generate a high-engagement, clickbaity title and description for a 60-second Short. "
+                "You are a viral Minecraft YouTuber expert. "
+                "Generate a high-engagement, clickbaity title and description for a high-quality Minecraft video. "
                 "The content must be mind-blowing or intense. "
                 "Use emojis and relate hashtags to the content. "
                 "Provide Baritone AI instructions for the action."
@@ -72,11 +72,12 @@ def generate_plan():
                 f"{system_prompt}\n\n"
                 f"Week: {i}\n"
                 f"Theme: {theme}\n"
-                "Task: Create a unique, non-repetitive, and extremely engaging Minecraft Shorts plan.\n"
+                "Task: Create a unique, non-repetitive, and extremely engaging Minecraft Video plan.\n"
                 "Preparation: Include specific Minecraft commands for setup (gamerules, time, building structures with WorldEdit if needed).\n"
                 "Action: Provide clear Baritone AI commands for the main gameplay recording.\n"
-                "Metadata: Clickbaity Japanese Title, punchy description with emojis and related hashtags.\n"
-                "Format: JSON ONLY with keys 'title', 'description', 'setup_commands' (list of / or // commands), 'action_commands' (list of Baritone commands), 'hashtags' (list)."
+                "Metadata: Clickbaity Japanese Title, punchy description with emojis and related hashtags. "
+                "Include a 'tags' field with comma-separated SEO tags for the YouTube tags section.\n"
+                "Format: JSON ONLY with keys 'title', 'description', 'setup_commands' (list), 'action_commands' (list), 'hashtags' (list), 'tags' (string)."
             )
             print(f"Inference starting for Week {i}...")
             output = llm(f"User: {prompt}\nAssistant:", max_tokens=512, stop=["User:"])
@@ -89,8 +90,12 @@ def generate_plan():
 
         # Combine mandatory hashtags with LLM-generated ones, removing duplicates
         week_hashtags = list(set(mandatory_hashtags + [theme]))
-        if llm and data and "hashtags" in data:
-            week_hashtags = list(set(mandatory_hashtags + data["hashtags"]))
+        week_tags = "Minecraft, Gaming, Challenge"
+        if llm and data:
+            if "hashtags" in data:
+                week_hashtags = list(set(mandatory_hashtags + data["hashtags"]))
+            if "tags" in data:
+                week_tags = data["tags"]
 
         setup_cmds = data.get("setup_commands", ["/gamerule doMobSpawning false", "/time set noon"]) if llm and data else ["/time set noon"]
         action_cmds = data.get("action_commands", [instr]) if llm and data else [instr]
@@ -100,6 +105,7 @@ def generate_plan():
             "title": title,
             "description": desc,
             "hashtags": week_hashtags,
+            "tags": week_tags,
             "scheduled_at": (start_date + datetime.timedelta(weeks=i)).isoformat(),
             "setup_commands": setup_cmds,
             "action_commands": action_cmds,

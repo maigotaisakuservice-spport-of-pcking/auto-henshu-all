@@ -49,11 +49,16 @@ def upload_video(youtube, file_path, title, description, hashtags, scheduled_dat
     if not os.path.exists(file_path):
         return None
 
+    # Use explicit tags if available, else fallback to hashtags
+    video_tags = entry.get("tags", ",".join(hashtags)) if entry else ",".join(hashtags)
+    if isinstance(video_tags, str):
+        video_tags = [t.strip() for t in video_tags.split(",")]
+
     body = {
         'snippet': {
             'title': title[:100],
             'description': f"{description}\n\n" + " ".join([f"#{h}" for h in hashtags]),
-            'tags': hashtags,
+            'tags': video_tags,
             'categoryId': '20'
         },
         'status': {
@@ -106,6 +111,7 @@ def process_uploads():
 
     for entry in plan:
         if entry["status"] == "produced":
+            # Pass the whole entry or at least the tags
             yt_id = upload_video(
                 youtube,
                 entry["video_path"],
@@ -113,7 +119,8 @@ def process_uploads():
                 entry["description"],
                 entry["hashtags"],
                 entry.get("scheduled_at"),
-                entry.get("privacy", "private")
+                entry.get("privacy", "private"),
+                entry # pass entry to get tags
             )
             if yt_id:
                 entry["status"] = "uploaded"
