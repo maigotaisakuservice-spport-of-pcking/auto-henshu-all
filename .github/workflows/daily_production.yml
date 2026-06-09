@@ -1,7 +1,7 @@
 name: Daily Video Production
 on:
   schedule:
-    - cron: '0 0 * * *' # Every day at 00:00 UTC
+    - cron: '10 8 * * *' # Every day at 08:10 UTC (10 mins after YouTube API Quota reset at Midnight Pacific Time)
   workflow_dispatch:
 
 permissions:
@@ -14,10 +14,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Java 8
+        uses: actions/setup-java@v4
+        with:
+          java-version: '8'
+          distribution: 'temurin'
+
       - name: Set up Environment
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb ffmpeg openjdk-8-jdk curl
+          sudo apt-get install -y xvfb ffmpeg curl
           pip install --upgrade pip
           pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib llama-cpp-python
 

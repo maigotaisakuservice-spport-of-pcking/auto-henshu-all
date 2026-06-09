@@ -1,22 +1,5 @@
 [
     {
-        "week": 0,
-        "title": "THE IMPOSSIBLE DROP (不可能への挑戦)",
-        "description": "高度10,000ブロックからの水バケツ着地への挑戦！ #Minecraft #Shorts #ImpossibleDrop",
-        "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "ImpossibleDrop",
-            "MLG"
-        ],
-        "scheduled_at": null,
-        "privacy": "private",
-        "ai_instructions": "/tp @p 0 10000 0 | then perform water bucket MLG at 0 60 0 surrounded by lava and obsidian",
-        "status": "pending",
-        "video_path": null,
-        "youtube_id": null
-    },
-    {
         "week": 1,
         "title": "Minecraft Building Week 1",
         "description": "Week 1 content",
@@ -25,7 +8,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-06-22",
+        "scheduled_at": "2026-06-21",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -33,15 +16,15 @@
     },
     {
         "week": 2,
-        "title": "Redstone Rhapsody",
-        "description": "A mesmerizing display of redstone contraptions",
+        "title": "Minecraft Redstone Week 2",
+        "description": "Week 2 content",
         "hashtags": [
             "Minecraft",
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-06-29",
-        "ai_instructions": "/gamerule doSinglePlayerCommand false\n/baritone render -t 60 -s 60 -c 0 0 0 -d -v -r -i 10 -s 10 -l 10\n/baritone play 1\n",
+        "scheduled_at": "2026-06-28",
+        "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -55,7 +38,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-07-06",
+        "scheduled_at": "2026-07-05",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -70,7 +53,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-07-13",
+        "scheduled_at": "2026-07-12",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -85,7 +68,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-07-20",
+        "scheduled_at": "2026-07-19",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -100,7 +83,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-07-27",
+        "scheduled_at": "2026-07-26",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -115,7 +98,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-08-03",
+        "scheduled_at": "2026-08-02",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -130,7 +113,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-08-10",
+        "scheduled_at": "2026-08-09",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -145,7 +128,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-08-17",
+        "scheduled_at": "2026-08-16",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -160,7 +143,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-08-24",
+        "scheduled_at": "2026-08-23",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -175,7 +158,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-08-31",
+        "scheduled_at": "2026-08-30",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -190,7 +173,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-09-07",
+        "scheduled_at": "2026-09-06",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -205,7 +188,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-09-14",
+        "scheduled_at": "2026-09-13",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -220,7 +203,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-09-21",
+        "scheduled_at": "2026-09-20",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -235,7 +218,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-09-28",
+        "scheduled_at": "2026-09-27",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -250,7 +233,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-10-05",
+        "scheduled_at": "2026-10-04",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -265,7 +248,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-10-12",
+        "scheduled_at": "2026-10-11",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -280,7 +263,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-10-19",
+        "scheduled_at": "2026-10-18",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -295,7 +278,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-10-26",
+        "scheduled_at": "2026-10-25",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -310,7 +293,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-11-02",
+        "scheduled_at": "2026-11-01",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -325,7 +308,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-11-09",
+        "scheduled_at": "2026-11-08",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -340,7 +323,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-11-16",
+        "scheduled_at": "2026-11-15",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -355,7 +338,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-11-23",
+        "scheduled_at": "2026-11-22",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -370,7 +353,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-11-30",
+        "scheduled_at": "2026-11-29",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -385,7 +368,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2026-12-07",
+        "scheduled_at": "2026-12-06",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -400,7 +383,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2026-12-14",
+        "scheduled_at": "2026-12-13",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -415,7 +398,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2026-12-21",
+        "scheduled_at": "2026-12-20",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -430,7 +413,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2026-12-28",
+        "scheduled_at": "2026-12-27",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -445,7 +428,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-01-04",
+        "scheduled_at": "2027-01-03",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -460,7 +443,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-01-11",
+        "scheduled_at": "2027-01-10",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -475,7 +458,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-01-18",
+        "scheduled_at": "2027-01-17",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -490,7 +473,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-01-25",
+        "scheduled_at": "2027-01-24",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -505,7 +488,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-02-01",
+        "scheduled_at": "2027-01-31",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -520,7 +503,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-02-08",
+        "scheduled_at": "2027-02-07",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -535,7 +518,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-02-15",
+        "scheduled_at": "2027-02-14",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -550,7 +533,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-02-22",
+        "scheduled_at": "2027-02-21",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -558,15 +541,15 @@
     },
     {
         "week": 37,
-        "title": "Building a Dream Castle",
-        "description": "Join me on a thrilling adventure as we build a majestic dream castle in the world of Minecraft!",
+        "title": "Minecraft Building Week 37",
+        "description": "Week 37 content",
         "hashtags": [
             "Minecraft",
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-03-01",
-        "ai_instructions": "/baritone build: -p 10 -t castle -s 100 -d 0",
+        "scheduled_at": "2027-02-28",
+        "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -580,7 +563,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-03-08",
+        "scheduled_at": "2027-03-07",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -595,7 +578,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-03-15",
+        "scheduled_at": "2027-03-14",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -610,7 +593,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-03-22",
+        "scheduled_at": "2027-03-21",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -625,7 +608,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-03-29",
+        "scheduled_at": "2027-03-28",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -640,7 +623,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-04-05",
+        "scheduled_at": "2027-04-04",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -655,7 +638,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-04-12",
+        "scheduled_at": "2027-04-11",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -670,7 +653,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-04-19",
+        "scheduled_at": "2027-04-18",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -685,7 +668,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-04-26",
+        "scheduled_at": "2027-04-25",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -700,7 +683,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-05-03",
+        "scheduled_at": "2027-05-02",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -715,7 +698,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-05-10",
+        "scheduled_at": "2027-05-09",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -730,7 +713,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-05-17",
+        "scheduled_at": "2027-05-16",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -745,7 +728,7 @@
             "Shorts",
             "Building"
         ],
-        "scheduled_at": "2027-05-24",
+        "scheduled_at": "2027-05-23",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -760,7 +743,7 @@
             "Shorts",
             "Redstone"
         ],
-        "scheduled_at": "2027-05-31",
+        "scheduled_at": "2027-05-30",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -775,7 +758,7 @@
             "Shorts",
             "Discovery"
         ],
-        "scheduled_at": "2027-06-07",
+        "scheduled_at": "2027-06-06",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,
@@ -790,7 +773,7 @@
             "Shorts",
             "Survival"
         ],
-        "scheduled_at": "2027-06-14",
+        "scheduled_at": "2027-06-13",
         "ai_instructions": "explore",
         "status": "pending",
         "video_path": null,

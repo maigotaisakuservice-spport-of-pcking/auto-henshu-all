@@ -54,9 +54,26 @@ def generate_plan():
         title, desc, instr = f"Minecraft {theme} Week {i}", f"Week {i} content", "explore"
 
         if llm:
-            prompt = f"Create a Minecraft Short (60s). Theme: {theme}. Return JSON: {{'title': '...', 'description': '...', 'instructions': 'Baritone command'}}"
+            system_prompt = (
+                "You are a viral Minecraft YouTuber expert at YouTube Shorts. "
+                "Generate a high-engagement, clickbaity title and description for a 60-second Short. "
+                "The content must be mind-blowing or intense. "
+                "Use emojis and relate hashtags to the content. "
+                "Provide Baritone AI instructions for the action."
+            )
+            prompt = (
+                f"{system_prompt}\n\n"
+                f"Week: {i}\n"
+                f"Theme: {theme}\n"
+                "Task: Create a unique, non-repetitive, and extremely engaging Minecraft Shorts plan. "
+                "The title should be a 'Hook' that stops people from scrolling (like 'Impossible' or 'Secret'). "
+                "The description should be punchy with emojis and related hashtags. "
+                "The instructions should be clear Baritone commands.\n"
+                "Constraints: Use Japanese for title/description. Ensure this week's content is distinct and highest quality.\n"
+                "Format: JSON ONLY with keys 'title', 'description', 'instructions', 'hashtags' (list)."
+            )
             print(f"Inference starting for Week {i}...")
-            output = llm(f"User: {prompt}\nAssistant:", max_tokens=256, stop=["User:"])
+            output = llm(f"User: {prompt}\nAssistant:", max_tokens=512, stop=["User:"])
             print(f"Inference finished for Week {i}.")
             data = robust_json_parse(output['choices'][0]['text'])
             if data:
@@ -64,11 +81,15 @@ def generate_plan():
                 desc = data.get("description", desc)
                 instr = data.get("instructions", instr)
 
+        week_hashtags = ["Minecraft", "Shorts", theme]
+        if llm and data and "hashtags" in data:
+            week_hashtags = data["hashtags"]
+
         plan.append({
             "week": i,
             "title": title,
             "description": desc,
-            "hashtags": ["Minecraft", "Shorts", theme],
+            "hashtags": week_hashtags,
             "scheduled_at": (start_date + datetime.timedelta(weeks=i)).isoformat(),
             "ai_instructions": instr,
             "status": "pending",
