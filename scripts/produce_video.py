@@ -136,8 +136,18 @@ def produce_batch(limit=5):
 
         bridge.start_recording(raw_video)
 
-        # Pass the instruction to Baritone
-        bridge.send_baritone_command(entry["ai_instructions"])
+        # 1-1. Preparation phase (Gamerules, WorldEdit, etc.)
+        setup_cmds = entry.get("setup_commands", [])
+        for cmd in setup_cmds:
+            print(f"Executing Setup Command: {cmd}")
+            bridge.send_baritone_command(cmd)
+            time.sleep(2) # Short gap between setup commands
+
+        # 1-2. Main Action phase
+        action_cmds = entry.get("action_commands", [])
+        for cmd in action_cmds:
+            print(f"Executing Action Command: {cmd}")
+            bridge.send_baritone_command(cmd)
 
         # Record for 60 seconds of action
         time.sleep(60)

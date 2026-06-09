@@ -65,12 +65,11 @@ def generate_plan():
                 f"{system_prompt}\n\n"
                 f"Week: {i}\n"
                 f"Theme: {theme}\n"
-                "Task: Create a unique, non-repetitive, and extremely engaging Minecraft Shorts plan. "
-                "The title should be a 'Hook' that stops people from scrolling (like 'Impossible' or 'Secret'). "
-                "The description should be punchy with emojis and related hashtags. "
-                "The instructions should be clear Baritone commands.\n"
-                "Constraints: Use Japanese for title/description. Ensure this week's content is distinct and highest quality.\n"
-                "Format: JSON ONLY with keys 'title', 'description', 'instructions', 'hashtags' (list)."
+                "Task: Create a unique, non-repetitive, and extremely engaging Minecraft Shorts plan.\n"
+                "Preparation: Include specific Minecraft commands for setup (gamerules, time, building structures with WorldEdit if needed).\n"
+                "Action: Provide clear Baritone AI commands for the main gameplay recording.\n"
+                "Metadata: Clickbaity Japanese Title, punchy description with emojis and related hashtags.\n"
+                "Format: JSON ONLY with keys 'title', 'description', 'setup_commands' (list of / or // commands), 'action_commands' (list of Baritone commands), 'hashtags' (list)."
             )
             print(f"Inference starting for Week {i}...")
             output = llm(f"User: {prompt}\nAssistant:", max_tokens=512, stop=["User:"])
@@ -85,13 +84,18 @@ def generate_plan():
         if llm and data and "hashtags" in data:
             week_hashtags = data["hashtags"]
 
+        setup_cmds = data.get("setup_commands", ["/gamerule doMobSpawning false", "/time set noon"]) if llm and data else ["/time set noon"]
+        action_cmds = data.get("action_commands", [instr]) if llm and data else [instr]
+
         plan.append({
             "week": i,
             "title": title,
             "description": desc,
             "hashtags": week_hashtags,
             "scheduled_at": (start_date + datetime.timedelta(weeks=i)).isoformat(),
-            "ai_instructions": instr,
+            "setup_commands": setup_cmds,
+            "action_commands": action_cmds,
+            "ai_instructions": " | ".join(setup_cmds + action_cmds), # Legacy support
             "status": "pending",
             "video_path": None,
             "youtube_id": None
