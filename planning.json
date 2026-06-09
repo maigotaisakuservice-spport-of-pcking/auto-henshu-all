@@ -1,15 +1,62 @@
 [
     {
+        "week": 0,
+        "title": "THE IMPOSSIBLE DROP (不可能への挑戦)",
+        "description": "高度10,000ブロックからの水バケツ着地への挑戦！",
+        "hashtags": [
+            "マイクラ",
+            "ImpossibleDrop",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "MLG",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
+        ],
+        "scheduled_at": null,
+        "privacy": "private",
+        "ai_instructions": "/tp @p 0 10000 0 | then perform water bucket MLG at 0 60 0 surrounded by lava and obsidian",
+        "status": "pending",
+        "video_path": null,
+        "youtube_id": null
+    },
+    {
         "week": 1,
         "title": "Minecraft Building Week 1",
         "description": "Week 1 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-06-21",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-06-23",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -19,27 +66,74 @@
         "title": "Minecraft Redstone Week 2",
         "description": "Week 2 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-06-28",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-06-30",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
     },
     {
         "week": 3,
-        "title": "Minecraft Discovery Week 3",
-        "description": "Week 3 content",
+        "title": "🔥💥 MINECRAFT DISCOVERY 🔥💥",
+        "description": "🌊 Dive into the unknown and discover a hidden world! 🌴 Explore abandoned ruins, hidden temples, and mysterious structures! 🔍 Can you uncover the secrets of this mysterious world? 🤔 #Minecraft #Discovery #HiddenWorld",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "ゲーム実況",
+            "#BaritoneAI",
+            "実況",
+            "#Discovery",
+            "マインクラフト",
+            "実況者",
+            "youtubeshort",
+            "youtubevideo",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "#Shorts",
+            "#HiddenWorld",
+            "minecraftshorts",
+            "#Minecraft",
+            "youtubevideos",
+            "youtubeshorts"
         ],
-        "scheduled_at": "2026-07-05",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-07-07",
+        "setup_commands": [
+            "/gamerule doDaylightCycle false",
+            "/gamerule doWeatherCycle false",
+            "/time set 6000",
+            "/worldedit setblock 0 0 0 stone"
+        ],
+        "action_commands": [
+            "Baritone ai follow 0 0 0",
+            "Baritone ai dig 1",
+            "Baritone ai explore 1 1 1",
+            "Baritone ai find 2 2 2",
+            "Baritone ai mine 1 1 1"
+        ],
+        "ai_instructions": "/gamerule doDaylightCycle false | /gamerule doWeatherCycle false | /time set 6000 | /worldedit setblock 0 0 0 stone | Baritone ai follow 0 0 0 | Baritone ai dig 1 | Baritone ai explore 1 1 1 | Baritone ai find 2 2 2 | Baritone ai mine 1 1 1",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -49,27 +143,77 @@
         "title": "Minecraft Survival Week 4",
         "description": "Week 4 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-07-12",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-07-14",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
     },
     {
         "week": 5,
-        "title": "Minecraft Building Week 5",
-        "description": "Week 5 content",
+        "title": "🔥 MIND-BLOWING MINECRAFT STRUCTURE! 🔥",
+        "description": "Get ready for the most EPIC Minecraft build EVER! 🤯 Watch as I use Baritone AI to construct a MASSIVE, intricate structure with hidden secrets and surprises! 😱 Will you be able to spot them all? 💡 #Minecraft #BaritoneAI #Building",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "#BuildingChallenge",
+            "テキパキパソコン",
+            "ゲーム実況",
+            "#BaritoneAI",
+            "実況",
+            "#MinecraftBuilding",
+            "マインクラフト",
+            "実況者",
+            "youtubeshort",
+            "youtubevideo",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "#MinecraftShorts",
+            "minecraftshorts",
+            "#Gaming",
+            "youtubevideos",
+            "youtubeshorts"
         ],
-        "scheduled_at": "2026-07-19",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-07-21",
+        "setup_commands": [
+            "/gamerule showDebug false",
+            "/time set day 10000",
+            "/worldedit fill 0 0 0 100 100 100 air"
+        ],
+        "action_commands": [
+            "move 0 0 0",
+            "dig 1 1 1",
+            "move 1 1 1",
+            "dig 2 2 2",
+            "move 2 2 2",
+            "dig 3 3 3",
+            "move 3 3 3",
+            "fill 4 4 4 5 5 5 stonebrick",
+            "replace 5 5 5 6 6 6 air"
+        ],
+        "ai_instructions": "/gamerule showDebug false | /time set day 10000 | /worldedit fill 0 0 0 100 100 100 air | move 0 0 0 | dig 1 1 1 | move 1 1 1 | dig 2 2 2 | move 2 2 2 | dig 3 3 3 | move 3 3 3 | fill 4 4 4 5 5 5 stonebrick | replace 5 5 5 6 6 6 air",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -79,12 +223,30 @@
         "title": "Minecraft Redstone Week 6",
         "description": "Week 6 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-07-26",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-07-28",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -94,12 +256,30 @@
         "title": "Minecraft Discovery Week 7",
         "description": "Week 7 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-08-02",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-08-04",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -109,12 +289,30 @@
         "title": "Minecraft Survival Week 8",
         "description": "Week 8 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-08-09",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-08-11",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -124,12 +322,30 @@
         "title": "Minecraft Building Week 9",
         "description": "Week 9 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-08-16",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-08-18",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -139,12 +355,30 @@
         "title": "Minecraft Redstone Week 10",
         "description": "Week 10 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-08-23",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-08-25",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -154,12 +388,30 @@
         "title": "Minecraft Discovery Week 11",
         "description": "Week 11 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-08-30",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-09-01",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -169,12 +421,30 @@
         "title": "Minecraft Survival Week 12",
         "description": "Week 12 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-09-06",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-09-08",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -184,27 +454,80 @@
         "title": "Minecraft Building Week 13",
         "description": "Week 13 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-09-13",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-09-15",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
     },
     {
         "week": 14,
-        "title": "Minecraft Redstone Week 14",
-        "description": "Week 14 content",
+        "title": "🔥 MIND-BLOWING REDSTONE 🔥",
+        "description": "🔴🛠️ The most epic Redstone contraption EVER! 🛠️🔴 Watch as I build an insane structure that will BLOW YOUR MIND! 💥🔩",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Redstone"
+            "マイクラ",
+            "テキパキパソコン",
+            "ゲーム実況",
+            "#BaritoneAI",
+            "#Redstone",
+            "実況",
+            "マインクラフト",
+            "実況者",
+            "youtubeshort",
+            "youtubevideo",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "#Shorts",
+            "#Epic",
+            "minecraftshorts",
+            "#Minecraft",
+            "#Gaming",
+            "youtubevideos",
+            "youtubeshorts"
         ],
-        "scheduled_at": "2026-09-20",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-09-22",
+        "setup_commands": [
+            "/gamerule doDaylightCycle false",
+            "/time set 0 0",
+            "/give @p 64 stone",
+            "/give @p 64 redstone",
+            "/give @p 64 redstone_torch"
+        ],
+        "action_commands": [
+            " baritone record",
+            " baritone move 100 100",
+            " baritone build redstone_torch 100 100",
+            " baritone build redstone 100 100",
+            " baritone build stone 100 100",
+            " baritone build redstone_torch 150 100",
+            " baritone build redstone 150 100",
+            " baritone build stone 150 100",
+            " baritone record stop"
+        ],
+        "ai_instructions": "/gamerule doDaylightCycle false | /time set 0 0 | /give @p 64 stone | /give @p 64 redstone | /give @p 64 redstone_torch |  baritone record |  baritone move 100 100 |  baritone build redstone_torch 100 100 |  baritone build redstone 100 100 |  baritone build stone 100 100 |  baritone build redstone_torch 150 100 |  baritone build redstone 150 100 |  baritone build stone 150 100 |  baritone record stop",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -214,12 +537,30 @@
         "title": "Minecraft Discovery Week 15",
         "description": "Week 15 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-09-27",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-09-29",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -229,12 +570,30 @@
         "title": "Minecraft Survival Week 16",
         "description": "Week 16 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-10-04",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-10-06",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -244,12 +603,30 @@
         "title": "Minecraft Building Week 17",
         "description": "Week 17 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-10-11",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-10-13",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -259,12 +636,30 @@
         "title": "Minecraft Redstone Week 18",
         "description": "Week 18 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-10-18",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-10-20",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -274,12 +669,30 @@
         "title": "Minecraft Discovery Week 19",
         "description": "Week 19 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-10-25",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-10-27",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -289,12 +702,30 @@
         "title": "Minecraft Survival Week 20",
         "description": "Week 20 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-11-01",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-11-03",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -304,12 +735,30 @@
         "title": "Minecraft Building Week 21",
         "description": "Week 21 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-11-08",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-11-10",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -319,12 +768,30 @@
         "title": "Minecraft Redstone Week 22",
         "description": "Week 22 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-11-15",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-11-17",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -334,12 +801,30 @@
         "title": "Minecraft Discovery Week 23",
         "description": "Week 23 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-11-22",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-11-24",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -349,12 +834,30 @@
         "title": "Minecraft Survival Week 24",
         "description": "Week 24 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-11-29",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-12-01",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -364,12 +867,30 @@
         "title": "Minecraft Building Week 25",
         "description": "Week 25 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-12-06",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-12-08",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -379,12 +900,30 @@
         "title": "Minecraft Redstone Week 26",
         "description": "Week 26 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2026-12-13",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-12-15",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -394,12 +933,30 @@
         "title": "Minecraft Discovery Week 27",
         "description": "Week 27 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-12-20",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-12-22",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -409,12 +966,30 @@
         "title": "Minecraft Survival Week 28",
         "description": "Week 28 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2026-12-27",
-        "ai_instructions": "explore",
+        "scheduled_at": "2026-12-29",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -424,12 +999,30 @@
         "title": "Minecraft Building Week 29",
         "description": "Week 29 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-01-03",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-01-05",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -439,12 +1032,30 @@
         "title": "Minecraft Redstone Week 30",
         "description": "Week 30 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-01-10",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-01-12",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -454,12 +1065,30 @@
         "title": "Minecraft Discovery Week 31",
         "description": "Week 31 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-01-17",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-01-19",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -469,12 +1098,30 @@
         "title": "Minecraft Survival Week 32",
         "description": "Week 32 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-01-24",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-01-26",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -484,12 +1131,30 @@
         "title": "Minecraft Building Week 33",
         "description": "Week 33 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-01-31",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-02-02",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -499,12 +1164,30 @@
         "title": "Minecraft Redstone Week 34",
         "description": "Week 34 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-02-07",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-02-09",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -514,12 +1197,30 @@
         "title": "Minecraft Discovery Week 35",
         "description": "Week 35 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-02-14",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-02-16",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -529,12 +1230,30 @@
         "title": "Minecraft Survival Week 36",
         "description": "Week 36 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-02-21",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-02-23",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -544,12 +1263,30 @@
         "title": "Minecraft Building Week 37",
         "description": "Week 37 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-02-28",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-03-02",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -559,12 +1296,30 @@
         "title": "Minecraft Redstone Week 38",
         "description": "Week 38 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-03-07",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-03-09",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -574,12 +1329,30 @@
         "title": "Minecraft Discovery Week 39",
         "description": "Week 39 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-03-14",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-03-16",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -589,12 +1362,31 @@
         "title": "Minecraft Survival Week 40",
         "description": "Week 40 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-03-21",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-03-23",
+        "setup_commands": [
+            "/gamerule doMobSpawning false",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/gamerule doMobSpawning false | /time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -604,12 +1396,30 @@
         "title": "Minecraft Building Week 41",
         "description": "Week 41 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-03-28",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-03-30",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -619,12 +1429,30 @@
         "title": "Minecraft Redstone Week 42",
         "description": "Week 42 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-04-04",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-04-06",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -634,12 +1462,30 @@
         "title": "Minecraft Discovery Week 43",
         "description": "Week 43 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-04-11",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-04-13",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -649,12 +1495,30 @@
         "title": "Minecraft Survival Week 44",
         "description": "Week 44 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-04-18",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-04-20",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -664,12 +1528,30 @@
         "title": "Minecraft Building Week 45",
         "description": "Week 45 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-04-25",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-04-27",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -679,27 +1561,79 @@
         "title": "Minecraft Redstone Week 46",
         "description": "Week 46 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-05-02",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-05-04",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
     },
     {
         "week": 47,
-        "title": "Minecraft Discovery Week 47",
-        "description": "Week 47 content",
+        "title": "🔥 MINECRAFT SHOCKER 🔥: DISCOVERING THE ABANDONED CITY OF ZHENGXI 🏙️!",
+        "description": "Get ready to uncover the secrets of a long-abandoned city in this EPIC Minecraft adventure! 🔮️✨ Join me as I explore the ruins of Zhengxi, a mysterious metropolis hidden deep in the heart of the Nether 🔥. Can we uncover the truth behind its downfall? 🔮️ Watch until the end to find out! 🔜",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "ゲーム実況",
+            "#BaritoneAI",
+            "#Adventure",
+            "実況",
+            "#Discovery",
+            "マインクラフト",
+            "実況者",
+            "youtubeshort",
+            "youtubevideo",
+            "#Zhengxi",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "#Shorts",
+            "minecraftshorts",
+            "#Minecraft",
+            "youtubevideos",
+            "youtubeshorts"
         ],
-        "scheduled_at": "2027-05-09",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-05-11",
+        "setup_commands": [
+            "/gamerule doDaylightCycle false",
+            "/gamerule doWeatherCycle false",
+            "/time set 1000",
+            "/worldedit setregion -1000 1000 -1000 1000",
+            "/worldedit fillregion -1000 1000 -1000 1000 air"
+        ],
+        "action_commands": [
+            "baritone move 0 0 0",
+            "baritone dig 0 0 0",
+            "baritone move 100 0 0",
+            "baritone dig 100 0 0",
+            "baritone move 0 50 0",
+            "baritone dig 0 50 0",
+            "baritone move 0 0 50",
+            "baritone dig 0 0 50"
+        ],
+        "ai_instructions": "/gamerule doDaylightCycle false | /gamerule doWeatherCycle false | /time set 1000 | /worldedit setregion -1000 1000 -1000 1000 | /worldedit fillregion -1000 1000 -1000 1000 air | baritone move 0 0 0 | baritone dig 0 0 0 | baritone move 100 0 0 | baritone dig 100 0 0 | baritone move 0 50 0 | baritone dig 0 50 0 | baritone move 0 0 50 | baritone dig 0 0 50",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -709,12 +1643,30 @@
         "title": "Minecraft Survival Week 48",
         "description": "Week 48 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-05-16",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-05-18",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -724,12 +1676,30 @@
         "title": "Minecraft Building Week 49",
         "description": "Week 49 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Building"
+            "マイクラ",
+            "Building",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-05-23",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-05-25",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -739,12 +1709,30 @@
         "title": "Minecraft Redstone Week 50",
         "description": "Week 50 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos",
             "Redstone"
         ],
-        "scheduled_at": "2027-05-30",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-06-01",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -754,12 +1742,30 @@
         "title": "Minecraft Discovery Week 51",
         "description": "Week 51 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Discovery"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "Discovery",
+            "minecraftshorts",
+            "ゲーム実況",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-06-06",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-06-08",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
@@ -769,12 +1775,30 @@
         "title": "Minecraft Survival Week 52",
         "description": "Week 52 content",
         "hashtags": [
-            "Minecraft",
-            "Shorts",
-            "Survival"
+            "マイクラ",
+            "テキパキパソコン",
+            "youtubevideo",
+            "実況",
+            "minecraftshorts",
+            "ゲーム実況",
+            "Survival",
+            "マインクラフト",
+            "まいくら",
+            "minecraft",
+            "ゲーム",
+            "youtubeshorts",
+            "実況者",
+            "youtubeshort",
+            "youtubevideos"
         ],
-        "scheduled_at": "2027-06-13",
-        "ai_instructions": "explore",
+        "scheduled_at": "2027-06-15",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | explore",
         "status": "pending",
         "video_path": null,
         "youtube_id": null
