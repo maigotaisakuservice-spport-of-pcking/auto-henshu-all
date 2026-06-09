@@ -30,12 +30,19 @@ def generate_plan():
     llm = get_llm()
     plan = []
 
+    # Mandatory core hashtags as requested by the user
+    mandatory_hashtags = [
+        "マインクラフト", "マイクラ", "minecraftshorts", "まいくら", "minecraft",
+        "実況", "実況者", "ゲーム", "ゲーム実況", "テキパキパソコン",
+        "youtubeshorts", "youtubeshort", "youtubevideo", "youtubevideos"
+    ]
+
     # 0. Special Initial Video: THE IMPOSSIBLE DROP
     plan.append({
         "week": 0,
         "title": "THE IMPOSSIBLE DROP (不可能への挑戦)",
-        "description": "高度10,000ブロックからの水バケツ着地への挑戦！ #Minecraft #Shorts #ImpossibleDrop",
-        "hashtags": ["Minecraft", "Shorts", "ImpossibleDrop", "MLG"],
+        "description": "高度10,000ブロックからの水バケツ着地への挑戦！",
+        "hashtags": list(set(mandatory_hashtags + ["ImpossibleDrop", "MLG"])),
         "scheduled_at": None, # No public schedule
         "privacy": "private",
         "ai_instructions": "/tp @p 0 10000 0 | then perform water bucket MLG at 0 60 0 surrounded by lava and obsidian",
@@ -80,9 +87,10 @@ def generate_plan():
                 desc = data.get("description", desc)
                 instr = data.get("instructions", instr)
 
-        week_hashtags = ["Minecraft", "Shorts", theme]
+        # Combine mandatory hashtags with LLM-generated ones, removing duplicates
+        week_hashtags = list(set(mandatory_hashtags + [theme]))
         if llm and data and "hashtags" in data:
-            week_hashtags = data["hashtags"]
+            week_hashtags = list(set(mandatory_hashtags + data["hashtags"]))
 
         setup_cmds = data.get("setup_commands", ["/gamerule doMobSpawning false", "/time set noon"]) if llm and data else ["/time set noon"]
         action_cmds = data.get("action_commands", [instr]) if llm and data else [instr]
