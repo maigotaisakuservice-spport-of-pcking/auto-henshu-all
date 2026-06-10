@@ -33,10 +33,11 @@ curl -Lo versions/1.12.2/1.12.2.jar https://launcher.mojang.com/v1/objects/0f275
 
 # Run installer
 echo "Running Forge installer..."
-# Using xvfb-run just in case, and omitting --installClient if it still fails,
-# but let's try with a dummy profile first.
-# Added -Duser.home=. to ensure it looks for launcher_profiles.json in the current dir
-xvfb-run java -Duser.home=. -jar forge-installer.jar --installClient . || echo "Forge installer failed, attempting manual setup..."
+# Try to install as server first to get all libraries reliably
+java -jar forge-installer.jar --installServer .
+
+# Also try install as client for assets (requires dummy profile)
+xvfb-run java -Duser.home=. -jar forge-installer.jar --installClient . || echo "Client install warning, continuing..."
 
 # Download Baritone (Stable 1.12.2)
 echo "Downloading Baritone..."

@@ -37,14 +37,19 @@ def generate_plan():
         "youtubevideo", "youtubevideos"
     ]
 
-    # 0. Special Initial Video: THE IMPOSSIBLE DROP
+    # 0. Special Initial Video: THE IMPOSSIBLE DROP (SHORTS)
     plan.append({
         "week": 0,
         "title": "THE IMPOSSIBLE DROP (不可能への挑戦)",
         "description": "高度10,000ブロックからの水バケツ着地への挑戦！",
-        "hashtags": list(set(mandatory_hashtags + ["ImpossibleDrop", "MLG"])),
+        "hashtags": list(set(mandatory_hashtags + ["ImpossibleDrop", "MLG", "Shorts"])),
+        "tags": "Minecraft, MLG, Water Bucket, Impossible, Challenge, Shorts",
+        "duration_sec": 55, # Keep it strictly under 60s for Shorts
+        "is_shorts": True,
         "scheduled_at": None, # No public schedule
         "privacy": "private",
+        "setup_commands": ["/tp @p 0 10000 0"],
+        "action_commands": ["perform water bucket MLG at 0 60 0 surrounded by lava and obsidian"],
         "ai_instructions": "/tp @p 0 10000 0 | then perform water bucket MLG at 0 60 0 surrounded by lava and obsidian",
         "status": "pending",
         "video_path": None,
@@ -68,6 +73,13 @@ def generate_plan():
                 "Use emojis and relate hashtags to the content. "
                 "Provide Baritone AI instructions for the action."
             )
+            # Week 52 special handling (Mega Project)
+            if i == 52:
+                theme = "Mega Project (1 Million Subscribers Special City Build)"
+                duration_prompt = "Exactly 3600 seconds (1 hour)."
+            else:
+                duration_prompt = "Between 600 and 900 seconds (10-15 minutes)."
+
             prompt = (
                 f"{system_prompt}\n\n"
                 f"Week: {i}\n"
@@ -77,7 +89,8 @@ def generate_plan():
                 "Action: Provide clear Baritone AI commands for the main gameplay recording.\n"
                 "Metadata: Clickbaity Japanese Title, punchy description with emojis and related hashtags. "
                 "Include a 'tags' field with comma-separated SEO tags for the YouTube tags section.\n"
-                "Format: JSON ONLY with keys 'title', 'description', 'setup_commands' (list), 'action_commands' (list), 'hashtags' (list), 'tags' (string)."
+                f"Duration: {duration_prompt}\n"
+                "Format: JSON ONLY with keys 'title', 'description', 'setup_commands' (list), 'action_commands' (list), 'hashtags' (list), 'tags' (string), 'duration_sec' (int)."
             )
             print(f"Inference starting for Week {i}...")
             output = llm(f"User: {prompt}\nAssistant:", max_tokens=512, stop=["User:"])
@@ -100,12 +113,23 @@ def generate_plan():
         setup_cmds = data.get("setup_commands", ["/gamerule doMobSpawning false", "/time set noon"]) if llm and data else ["/time set noon"]
         action_cmds = data.get("action_commands", [instr]) if llm and data else [instr]
 
+        # Ensure correct defaults based on week
+        if i == 52:
+            default_duration = 3600
+            title = data.get("title", "【100万人記念】AIが1時間で巨大都市を建設する神回") if llm and data else "【100万人記念】AIが1時間で巨大都市を建設する神回"
+        else:
+            default_duration = 600
+
+        duration = data.get("duration_sec", default_duration) if llm and data else default_duration
+
         plan.append({
             "week": i,
             "title": title,
             "description": desc,
             "hashtags": week_hashtags,
             "tags": week_tags,
+            "duration_sec": duration,
+            "is_shorts": False,
             "scheduled_at": (start_date + datetime.timedelta(weeks=i)).isoformat(),
             "setup_commands": setup_cmds,
             "action_commands": action_cmds,

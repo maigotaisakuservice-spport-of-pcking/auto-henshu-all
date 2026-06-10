@@ -58,14 +58,25 @@ def generate_bgm(output_path, duration_sec):
         # Fallback to simple noise if filter is too complex
         subprocess.run(["ffmpeg", "-f", "lavfi", "-i", f"noise=d={duration_sec}", "-t", str(duration_sec), output_path, "-y"], capture_output=True)
 
-def edit_video(input_video, input_audio, output_video):
-    print(f"Editing Regular Video (16:9): {output_video}")
-    # Maintain original aspect ratio (16:9 720p)
-    # Just merge audio and normalize volume
+def edit_video(input_video, input_audio, output_video, is_shorts=False):
+    if is_shorts:
+        print(f"Editing Shorts (9:16): {output_video}")
+        filter_complex = (
+            "[0:v]scale=w=trunc(ih*9/16/2)*2:h=ih,setsar=1,boxblur=20:20[bg];"
+            "[0:v]scale=w=1080:h=1920:force_original_aspect_ratio=decrease[fg];"
+            "[bg][fg]overlay=(W-w)/2:(H-h)/2[v];"
+            "[1:a]volume=0.6[a]"
+        )
+        map_v = "[v]"
+    else:
+        print(f"Editing Regular Video (16:9): {output_video}")
+        filter_complex = "[1:a]volume=0.6[a]"
+        map_v = "0:v"
+
     cmd = [
         "ffmpeg", "-i", input_video, "-i", input_audio,
-        "-filter_complex", "[1:a]volume=0.6[a]",
-        "-map", "0:v", "-map", "[a]",
+        "-filter_complex", filter_complex,
+        "-map", map_v, "-map", "[a]",
         "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
         "-c:a", "aac", "-shortest", output_video, "-y"
     ]
@@ -144,16 +155,18 @@ def produce_batch(limit=5):
             print(f"Executing Action Command: {cmd}")
             bridge.send_baritone_command(cmd)
 
-        # Record for 60 seconds of action
-        time.sleep(60)
+        # Record for specified duration
+        duration = entry.get("duration_sec", 60)
+        print(f"Recording for {duration} seconds...")
+        time.sleep(duration)
 
         bridge.stop_all()
 
         bgm_file = f"bgm_{entry['week']}.mp3"
-        generate_bgm(bgm_file, 60)
+        generate_bgm(bgm_file, duration)
 
         final_video = f"final_{entry['week']}.mp4"
-        edit_video(raw_video, bgm_file, final_video)
+        edit_video(raw_video, bgm_file, final_video, is_shorts=entry.get("is_shorts", False))
 
         entry["status"] = "produced"
         entry["video_path"] = os.path.abspath(final_video)
