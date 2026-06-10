@@ -4,6 +4,9 @@ on:
     - cron: '10 8 * * *' # Every day at 08:10 UTC (10 mins after YouTube API Quota reset at Midnight Pacific Time)
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 

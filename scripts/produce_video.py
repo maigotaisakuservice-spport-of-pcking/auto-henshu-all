@@ -140,6 +140,12 @@ def produce_batch(limit=5):
         print("Waiting for Minecraft to initialize (90s)...")
         time.sleep(90)
 
+        if bridge.mc_process and bridge.mc_process.poll() is not None:
+            print(f"FATAL: Minecraft exited early with code {bridge.mc_process.poll()}")
+            entry["status"] = "failed"
+            bridge.stop_all()
+            continue
+
         bridge.start_recording(raw_video)
 
         # 1-1. Preparation phase (Gamerules, WorldEdit, etc.)

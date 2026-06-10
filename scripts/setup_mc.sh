@@ -3,15 +3,16 @@ set -e
 
 # Minecraft 1.12.2 Setup with Forge and Baritone
 MC_DIR="minecraft"
+# rm -rf $MC_DIR # Don't always delete, might want to cache?
+# But CI is clean anyway. Let's keep it for safety.
 mkdir -p $MC_DIR/mods
 mkdir -p $MC_DIR/versions/1.12.2
 
 echo "Installing dependencies..."
-# openjdk-8-jdk is handled by setup-java action in workflow
 sudo apt-get update
-sudo apt-get install -y xvfb ffmpeg libx11-6 python3-pip curl
+sudo apt-get install -y xvfb ffmpeg libx11-6 python3-pip curl xdotool
 
-# Create dummy launcher profiles to trick the Forge installer
+# Create dummy launcher profiles
 echo '{"profiles": {}}' > $MC_DIR/launcher_profiles.json
 
 # Download Forge Installer
@@ -24,24 +25,49 @@ if [ ! -f "$MC_DIR/forge-installer.jar" ]; then
 fi
 
 # Headless Install
-echo "Installing Forge (Headless)..."
 cd $MC_DIR
 
-# Download vanilla client jar first as the installer might need it
-echo "Downloading vanilla 1.12.2 client..."
-curl -Lo versions/1.12.2/1.12.2.jar https://launcher.mojang.com/v1/objects/0f275bc40cc72441d40237976e199b457e6ba39d/client.jar
+# Function to run command with retries
+run_with_retry() {
+    local max_attempts=3
+    local timeout=5
+    local attempt=1
+    local exitCode=0
 
-# Run installer
-echo "Running Forge installer..."
-# Try to install as server first to get all libraries reliably
-java -jar forge-installer.jar --installServer .
+    while [ $attempt -le $max_attempts ]; do
+        echo "Attempt $attempt of $max_attempts: $@"
+        set +e
+        "$@"
+        exitCode=$?
+        set -e
 
-# Also try install as client for assets (requires dummy profile)
-xvfb-run java -Duser.home=. -jar forge-installer.jar --installClient . || echo "Client install warning, continuing..."
+        if [ $exitCode -eq 0 ]; then
+            return 0
+        fi
+
+        echo "Command failed with exit code $exitCode. Retrying in $timeout seconds..."
+        sleep $timeout
+        attempt=$((attempt + 1))
+        timeout=$((timeout * 2))
+    done
+
+    echo "Command failed after $max_attempts attempts."
+    return $exitCode
+}
+
+# Install Server (most reliable for libraries)
+echo "Installing Forge Server..."
+run_with_retry java -jar forge-installer.jar --installServer .
+
+# Install Client (for assets/client libs)
+echo "Installing Forge Client..."
+run_with_retry xvfb-run java -Duser.home=. -jar forge-installer.jar --installClient . || echo "Client install warning, continuing..."
 
 # Download Baritone (Stable 1.12.2)
-echo "Downloading Baritone..."
-curl -Lo mods/baritone.jar https://github.com/cabaletta/baritone/releases/download/v1.2.15/baritone-api-forge-1.2.15.jar
+if [ ! -f "mods/baritone.jar" ]; then
+    echo "Downloading Baritone..."
+    curl -Lo mods/baritone.jar https://github.com/cabaletta/baritone/releases/download/v1.2.15/baritone-api-forge-1.2.15.jar
+fi
 
 # Accept EULA
 echo "eula=true" > eula.txt

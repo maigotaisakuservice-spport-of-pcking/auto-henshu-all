@@ -54,36 +54,53 @@ class MinecraftBridge:
 
     def start_minecraft(self):
         print("Starting Minecraft Forge 1.12.2...")
-        classpath = self.get_classpath()
 
-        if "launchwrapper" not in classpath:
-            print("WARNING: launchwrapper not found in classpath. Forge installation might be incomplete.")
+        # 1. Look for the Forge Universal Jar (created by --installServer)
+        universal_jars = [f for f in os.listdir(self.mc_path) if "forge-" in f and "universal.jar" in f]
 
-        cmd = [
-            "java", "-Xmx2G",
-            "-Djava.library.path=versions/1.12.2/1.12.2-natives",
-            "-cp", classpath,
-            "net.minecraft.launchwrapper.Launch",
-            "--gameDir", ".",
-            "--version", "1.12.2",
-            "--assetsDir", "assets",
-            "--assetIndex", "1.12",
-            "--userProperties", "{}",
-            "--accessToken", "0",
-            "--username", "AI_Player",
-            "--tweakClass", "net.minecraftforge.fml.common.launcher.FMLTweaker"
-        ]
+        if universal_jars:
+            # Recommended way: Run the universal jar directly.
+            # It handles its own library loading if installed correctly.
+            jar_to_run = universal_jars[0]
+            print(f"Using Forge Universal Jar: {jar_to_run}")
+            cmd = [
+                "java", "-Xmx2G",
+                "-jar", jar_to_run,
+                "nogui"
+            ]
+        else:
+            # Fallback to manual classpath if universal jar is missing
+            classpath = self.get_classpath()
+            cmd = [
+                "java", "-Xmx2G",
+                "-Djava.library.path=versions/1.12.2/1.12.2-natives",
+                "-cp", classpath,
+                "net.minecraft.launchwrapper.Launch",
+                "--gameDir", ".",
+                "--version", "1.12.2",
+                "--assetsDir", "assets",
+                "--assetIndex", "1.12",
+                "--userProperties", "{}",
+                "--accessToken", "0",
+                "--username", "AI_Player",
+                "--tweakClass", "net.minecraftforge.fml.common.launcher.FMLTweaker"
+            ]
 
-        print(f"Running Minecraft with classpath of {len(classpath.split(':'))} jars.")
-        # Log the command for debugging (be careful with tokens, but here tokens are mock)
         self.mc_process = subprocess.Popen(cmd, cwd=self.mc_path)
 
     def send_baritone_command(self, command):
-        print(f"Executing Baritone command: {command}")
-        # Command is sent by writing to the 'chat' via a local mod or stdin bridge.
-        # We use a helper file that a custom mod on the Minecraft side would read.
-        with open(os.path.join(self.mc_path, "baritone_cmd.txt"), "w") as f:
-            f.write(command)
+        print(f"Executing Baritone command via xdotool: {command}")
+        # Use xdotool to type the command into the Minecraft window
+        # This is more robust for headless environments than writing to a file
+        # / is used to open chat in Minecraft
+        try:
+            subprocess.run(["xdotool", "key", "slash"], env=dict(os.environ, DISPLAY=self.display))
+            time.sleep(0.5)
+            subprocess.run(["xdotool", "type", command], env=dict(os.environ, DISPLAY=self.display))
+            time.sleep(0.5)
+            subprocess.run(["xdotool", "key", "Return"], env=dict(os.environ, DISPLAY=self.display))
+        except Exception as e:
+            print(f"Failed to send command via xdotool: {e}")
 
     def stop_all(self):
         if self.record_process:
