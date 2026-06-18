@@ -1,0 +1,46 @@
+name: Generate 52-Week Plan
+on:
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+
+jobs:
+  generate-plan:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install llama-cpp-python
+
+      - name: Download Llama-3 Model
+        run: |
+          mkdir -p models
+          if [ ! -f "models/llama-3-8b-instruct.Q4_K_M.gguf" ]; then
+            curl -L "https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf" -o models/llama-3-8b-instruct.Q4_K_M.gguf
+          fi
+
+      - name: Run Planning Script
+        run: python scripts/generate_plan.py
+        env:
+          MODEL_PATH: "models/llama-3-8b-instruct.Q4_K_M.gguf"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add planning.json
+          git commit -m "docs: generate 52-week content plan" || echo "No changes to commit"
+          git push

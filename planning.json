@@ -1,0 +1,1927 @@
+[
+    {
+        "week": 0,
+        "title": "THE IMPOSSIBLE DROP (不可能への挑戦)",
+        "description": "高度10,000ブロックからの水バケツ着地への挑戦！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "youtubeshort",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "ImpossibleDrop",
+            "Shorts",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "minecraftshorts",
+            "MLG",
+            "youtubevideo"
+        ],
+        "scheduled_at": null,
+        "privacy": "private",
+        "ai_instructions": "/tp @p 0 10000 0 | then perform water bucket MLG at 0 60 0 surrounded by lava and obsidian",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": true,
+        "duration_sec": 55,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, youtubeshorts, youtubeshort, テキパキパソコン, まいくら",
+        "setup_commands": [
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ]
+    },
+    {
+        "week": 1,
+        "title": "🏝️ 1ブロックしかない世界で24時間生き残れ！",
+        "description": "足元に1つのブロックしか存在しない超過酷なワンブロックサバイバル！AIは足場を広げて生き残れるのか！？",
+        "hashtags": [
+            "実況者",
+            "サバイバル",
+            "youtubeshorts",
+            "youtubeshort",
+            "テキパキパソコン",
+            "ワンブロック",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-06-23",
+        "setup_commands": [
+            "/worldedit setblock 0 64 0 grass_block",
+            "/tp @p 0 65 0"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/worldedit setblock 0 64 0 grass_block | /tp @p 0 65 0 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 779,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, サバイバル, youtubeshorts, youtubeshort, テキパキパソコン"
+    },
+    {
+        "week": 2,
+        "title": "🚜 AIに自動整地を任せたらマップが丸ごと消滅した件",
+        "description": "Baritone AIを使って山を一瞬で平らにしようとした結果、制御不能になって地下の岩盤まで掘り進んでしまった大爆笑トラブル！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-06-30",
+        "setup_commands": [
+            "/gamerule randomTickSpeed 100",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "Baritone ai dig 100"
+        ],
+        "ai_instructions": "/gamerule randomTickSpeed 100 | /time set noon | Baritone ai dig 100",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 899,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, youtubeshorts, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 3,
+        "title": "⚡ 限界突破！秒速100ｍで爆走するボート高速道路",
+        "description": "青氷の上に設置したハーフブロックとボートを使った、ゲームの限界を超える超高速移動システムを開発！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "ボート",
+            "裏技",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-07-07",
+        "setup_commands": [
+            "/worldedit fill 0 60 0 100 60 0 packed_ice",
+            "/give @p boat 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/worldedit fill 0 60 0 100 60 0 packed_ice | /give @p boat 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 845,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, youtubeshorts, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 4,
+        "title": "💀 触れたら即大爆発！動くクリーパー迷宮から脱出せよ",
+        "description": "壁がすべて動く上に、中に100体のクリーパーが徘徊する凶悪なピストン迷宮。AIは無傷で生還できるのか？",
+        "hashtags": [
+            "実況者",
+            "脱出ゲーム",
+            "サバイバル",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "クリーパー",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-07-14",
+        "setup_commands": [
+            "/difficulty hard",
+            "/summon creeper ~ ~ ~",
+            "/time set midnight"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/difficulty hard | /summon creeper ~ ~ ~ | /time set midnight | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 884,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, 脱出ゲーム, サバイバル, youtubeshorts, テキパキパソコン"
+    },
+    {
+        "week": 5,
+        "title": "🏰 AIだけで超巨大ピラミッドを1分で建設する裏技",
+        "description": "人間なら数時間かかる超巨大ピラミッドを、Baritone AIの並列ビルド機能を使って一瞬で組み立てる神技！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "神業",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "建築",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "自動建築",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-07-21",
+        "setup_commands": [
+            "/worldedit fill 0 60 0 50 60 50 sandstone",
+            "/time set day"
+        ],
+        "action_commands": [
+            "Baritone build pyramid"
+        ],
+        "ai_instructions": "/worldedit fill 0 60 0 50 60 50 sandstone | /time set day | Baritone build pyramid",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 806,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, youtubeshorts, 神業, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 6,
+        "title": "🎵 音ブロックだけでネットの流行曲を完全再現！",
+        "description": "レッドストーンのリピーターと音符ブロックを敷き詰め、あの超有名ソングのメロディをマイクラ内で自動演奏させてみた！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "演奏してみた",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "音ブロック",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-07-28",
+        "setup_commands": [
+            "/time set noon",
+            "/give @p note_block 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | /give @p note_block 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 762,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, youtubeshorts, テキパキパソコン, 演奏してみた"
+    },
+    {
+        "week": 7,
+        "title": "🔱 海底神殿を「水抜きなし」で瞬時に攻略する神ルート",
+        "description": "最も面倒な海底神殿の水抜き作業を完全にスキップし、TNTとドアだけでエルダーガーディアンを暗殺するプロの技！",
+        "hashtags": [
+            "実況者",
+            "サバイバル",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "裏技",
+            "マイクラ",
+            "youtubevideos",
+            "海底神殿",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-08-04",
+        "setup_commands": [
+            "/effect give @p water_breathing 9999",
+            "/give @p tnt 10"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/effect give @p water_breathing 9999 | /give @p tnt 10 | explore",
+        "status": "rejected",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 825,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, サバイバル, youtubeshorts, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 8,
+        "title": "🌋 上から溶岩が降ってくる！極限のデスランサバイバル",
+        "description": "5秒ごとに天井から溶岩がランダムに降ってくる世界。AIは安全なシェルターを自分で見つけて逃げ込めるか！？",
+        "hashtags": [
+            "実況者",
+            "デスゲーム",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "溶岩",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-08-11",
+        "setup_commands": [
+            "/fill 0 80 0 10 80 10 lava",
+            "/time set night"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill 0 80 0 10 80 10 lava | /time set night | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 673,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, デスゲーム, youtubeshorts, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 9,
+        "title": "🐓 自動で焼き鳥が無限に降ってくる超ハイテクチキンタワー",
+        "description": "ニワトリの卵回収から、マグマ処理、そしてチェスト格納までを完全自動化した効率最強の食料生産タワーをビルド！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "便利装置",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-08-18",
+        "setup_commands": [
+            "/give @p chicken_spawn_egg 64",
+            "/time set day"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p chicken_spawn_egg 64 | /time set day | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 805,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, youtubeshorts, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 10,
+        "title": "📦 散らかったアイテムを自動で美しく仕分けする無敵の倉庫",
+        "description": "レッドストーンとホッパーを組み合わせ、どんなゴミアイテムでも一瞬で指定のチェストに高速整理する超画期的な倉庫の作り方！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "倉庫整理",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "便利技",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-08-25",
+        "setup_commands": [
+            "/give @p hopper 64",
+            "/give @p chest 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p hopper 64 | /give @p chest 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 667,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, youtubeshorts, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 11,
+        "title": "🧟 ゾンビ100体 vs 絶対に突破できない超ハイテクセキュリティハウス",
+        "description": "レーザー感知、自動落とし穴、TNTキャノンを配備した防衛拠点。飢えたゾンビ100体の猛攻を耐え抜くことはできるのか？",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "セキュリティ",
+            "マインクラフト",
+            "ゲーム",
+            "ゾンビ",
+            "ゲーム実況",
+            "実況",
+            "防衛ゲーム",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-09-01",
+        "setup_commands": [
+            "/difficulty hard",
+            "/summon zombie ~ ~ ~",
+            "/time set midnight"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/difficulty hard | /summon zombie ~ ~ ~ | /time set midnight | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 790,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, セキュリティ"
+    },
+    {
+        "week": 12,
+        "title": "🛗 奈落まで直通！世界一長い超高速水流エレベーター",
+        "description": "ソウルサンドとマグマブロックを駆使し、高度320からマイナス64までわずか数秒で移動する垂直エレベーターを限界検証！",
+        "hashtags": [
+            "実況者",
+            "エレベーター",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "水流エレベーター",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-09-08",
+        "setup_commands": [
+            "/fill 0 310 0 0 -60 0 water",
+            "/tp @p 0 315 0"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill 0 310 0 0 -60 0 water | /tp @p 0 315 0 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 861,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, エレベーター, youtubeshorts, テキパキパソコン, 水流エレベーター"
+    },
+    {
+        "week": 13,
+        "title": "💎 【大惨事】ダイヤだけで家を作ったら何分で全泥棒に盗まれる？",
+        "description": "マルチサーバーの平原に、最高級のダイヤモンドブロックで家を建築。監視カメラを置いて何分で解体されるか盗難シミュレーション！",
+        "hashtags": [
+            "実況者",
+            "サバイバル",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "ダイヤモンド",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-09-15",
+        "setup_commands": [
+            "/fill ~ ~ ~ ~5 ~5 ~5 diamond_block",
+            "/time set day"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill ~ ~ ~ ~5 ~5 ~5 diamond_block | /time set day | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 745,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, サバイバル, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 14,
+        "title": "🔄 バグ？無限にアイテムが増殖するヤバいバグ回路を試した結果",
+        "description": "ピストンと粘着ピストン、そしてチェスト付トロッコを特定のタイミングで干渉させてアイテムを無限増殖させる黒歴史バグを徹底解説！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "裏技",
+            "マイクラ",
+            "youtubevideos",
+            "バグ技",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-09-22",
+        "setup_commands": [
+            "/give @p sticky_piston 64",
+            "/give @p redstone_repeater 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p sticky_piston 64 | /give @p redstone_repeater 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 676,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, youtubeshorts, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 15,
+        "title": "🙈 進化しすぎたBaritone AIとマイクラでガチかくれんぼ！",
+        "description": "障害物をすべて計算し最短ルートを特定するAI。地下深くに隠れたプレイヤーをAIは何秒で見つけることができるのか！？",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "かくれんぼ",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-09-29",
+        "setup_commands": [
+            "/effect give @p invisibility 9999",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "Baritone ai find player"
+        ],
+        "ai_instructions": "/effect give @p invisibility 9999 | /time set noon | Baritone ai find player",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 806,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, テキパキパソコン, まいくら, minecraft, かくれんぼ"
+    },
+    {
+        "week": 16,
+        "title": "🤯 レバー1つで100個のピストンが踊り出す爆音カオス回路",
+        "description": "サーバーに最も負荷がかかる「無限ピストンクロック回路」を設置。マイクラの物理エンジンが悲鳴をあげる限界突破検証！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "レッドストーン",
+            "マイクラ",
+            "重い回路",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-10-06",
+        "setup_commands": [
+            "/give @p piston 64",
+            "/give @p redstone_block 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p piston 64 | /give @p redstone_block 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 689,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, youtubeshorts, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 17,
+        "title": "🐉 【盲目討伐】エンドラ戦中に画面が完全に真っ暗になる呪い",
+        "description": "常に「盲目（Blindness）」のエフェクトがかかった状態で、音とコンパスの反応だけを頼りにエンドラ討伐に挑む超絶縛りプレイ！",
+        "hashtags": [
+            "実況者",
+            "盲目",
+            "テキパキパソコン",
+            "縛りプレイ",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "エンドラ討伐",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-10-13",
+        "setup_commands": [
+            "/effect give @p blindness 9999",
+            "/give @p netherite_sword 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/effect give @p blindness 9999 | /give @p netherite_sword 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 878,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, 盲目, テキパキパソコン, 縛りプレイ, まいくら"
+    },
+    {
+        "week": 18,
+        "title": "🚀 水流のパワーで空高く舞い上がれ！人間大砲ランチャー",
+        "description": "ディスペンサーから射出された大量のTNT水流爆発を利用し、サバイバルで一瞬にして雲の上までプレイヤーをぶっ飛ばすロマン砲！",
+        "hashtags": [
+            "実況者",
+            "youtubeshorts",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "TNTキャノン",
+            "ロマン兵器",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-10-20",
+        "setup_commands": [
+            "/give @p dispenser 64",
+            "/give @p tnt 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p dispenser 64 | /give @p tnt 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 834,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, youtubeshorts, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 19,
+        "title": "🚪 誰も見たことのない驚愕の「隠し扉」の作り方10選",
+        "description": "絵画をすり抜ける古典的なものから、アイテムを投げ入れると開く超複雑なスマートレッドストーンドアまで徹底図解！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "隠し扉",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "建築",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-10-27",
+        "setup_commands": [
+            "/give @p iron_door 10",
+            "/give @p redstone_torch 10"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p iron_door 10 | /give @p redstone_torch 10 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 756,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, 隠し扉, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 20,
+        "title": "🚃 レールを自動敷設しながら進む夢の「無限装甲列車」",
+        "description": "前に進むたびに自動で線路が生成され、後ろの不要になったレールを自動回収する革新的なピストン走行システムを公開！",
+        "hashtags": [
+            "無限軌道",
+            "実況者",
+            "ピストン",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-11-03",
+        "setup_commands": [
+            "/give @p rail 64",
+            "/give @p minecart 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p rail 64 | /give @p minecart 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 775,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 無限軌道, 実況者, ピストン, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 21,
+        "title": "🎨 AIに有名な絵画をマインクラフトで描かせてみた結果",
+        "description": "Baritone AIにモナ・リザの画像を読み込ませ、100x100のブロックアートとして自動描画させる現代の最先端デジタルマイクラ！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "ドット絵",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "アート",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-11-10",
+        "setup_commands": [
+            "/time set day",
+            "/worldedit fill 0 60 0 100 60 100 white_wool"
+        ],
+        "action_commands": [
+            "Baritone build pixelart"
+        ],
+        "ai_instructions": "/time set day | /worldedit fill 0 60 0 100 60 100 white_wool | Baritone build pixelart",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 756,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, テキパキパソコン, ドット絵, まいくら, minecraft"
+    },
+    {
+        "week": 22,
+        "title": "👣 一歩進むたびに地面が砂利に変わって落下するデスツアー",
+        "description": "プレイヤーが踏んだブロックがリアルタイムで重力に従う砂利へと変化。一度止まれば奈落の底へ一直線の超絶パニックラン！",
+        "hashtags": [
+            "実況者",
+            "サバイバル",
+            "アスレチック",
+            "テキパキパソコン",
+            "パニックゲーム",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-11-17",
+        "setup_commands": [
+            "/fill ~-10 60 ~-10 ~10 60 ~10 stone",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill ~-10 60 ~-10 ~10 60 ~10 stone | /time set noon | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 627,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, サバイバル, アスレチック, テキパキパソコン, パニックゲーム"
+    },
+    {
+        "week": 23,
+        "title": "🚥 赤石不要！オブザーバー同士を向かい合わせた「最速周期」検証",
+        "description": "レッドストーンダストを1つも使わず、オブザーバー（観察者）を2つ向かい合わせにするだけで作れる驚異の1クロック最速信号マシン！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "観察者",
+            "マイクラ",
+            "youtubevideos",
+            "豆知識",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-11-24",
+        "setup_commands": [
+            "/give @p observer 64",
+            "/give @p redstone_lamp 10"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p observer 64 | /give @p redstone_lamp 10 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 663,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 24,
+        "title": "🤫 古代都市のウォーデンを一度も怒らせずに隠し宝箱を全回収する術",
+        "description": "スカルクセンサーの探知範囲を逆手に取り、羊毛とスニーク操作だけで古代都市(Deep Dark)の秘宝を完全荒らし尽くすステルス検証！",
+        "hashtags": [
+            "攻略",
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "古代都市",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "ウォーデン",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-12-01",
+        "setup_commands": [
+            "/effect give @p night_vision 9999",
+            "/give @p white_wool 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/effect give @p night_vision 9999 | /give @p white_wool 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 790,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 攻略, 実況者, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 25,
+        "title": "🧥 帰宅した瞬間に「最強防具」が自動でフル装備されるハイテク玄関",
+        "description": "家に帰って玄関の感圧板を踏むだけで、ディスペンサーからネザライト防具が一瞬で射出・全自動装着される最強ギミックの設計図！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "便利ギミック",
+            "防具自動装着",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-12-08",
+        "setup_commands": [
+            "/give @p dispenser 4",
+            "/give @p netherite_chestplate 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p dispenser 4 | /give @p netherite_chestplate 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 678,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 26,
+        "title": "🏎️ AIが作った氷上ボートサーキットにプロが挑んだら無理ゲーすぎた",
+        "description": "超高速でボートが滑る氷の路面。AIに「一番曲がりにくい最悪のコーナー」を設計させたら、常人では1秒も耐えられない魔境が完成した...",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "氷上レース",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "ボートレース",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-12-15",
+        "setup_commands": [
+            "/worldedit fill 0 60 0 50 60 50 blue_ice",
+            "/give @p boat 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/worldedit fill 0 60 0 50 60 50 blue_ice | /give @p boat 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 662,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, テキパキパソコン, まいくら, minecraft, 氷上レース"
+    },
+    {
+        "week": 27,
+        "title": "🎆 聖夜の超爆発！10,000個のTNTで巨大クリスマス花火を打ち上げる",
+        "description": "メリークリスマス！サーバーがクラッシュするギリギリを攻め、1万個のTNTを同時に打ち上げて夜空に超巨大なツリーを描く大プロジェクト！",
+        "hashtags": [
+            "実況者",
+            "花火",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "TNT爆破",
+            "youtubevideos",
+            "クリスマス",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-12-22",
+        "setup_commands": [
+            "/time set night",
+            "/give @p tnt 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set night | /give @p tnt 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 860,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, 花火, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 28,
+        "title": "⛩️ 【お年玉】天井からダイヤブロックが無限に降ってくる神社",
+        "description": "新春マイクラ配信！特製神社にお参りをして賽銭を投げ入れると、天井のディスペンサーから本物のダイヤが怒涛の如く降ってくる全自動開運装置！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "お正月",
+            "ゲーム実況",
+            "実況",
+            "神社建築",
+            "マイクラ",
+            "ダイヤモンド",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2026-12-29",
+        "setup_commands": [
+            "/give @p diamond_block 64",
+            "/time set day"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p diamond_block 64 | /time set day | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 727,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, マインクラフト"
+    },
+    {
+        "week": 29,
+        "title": "🌀 視点をちょっと変えるだけで別世界に移動する「錯視トリックルーム」",
+        "description": "ピストンと感圧板を巧みに使い、プレイヤーが向いた方向に応じて部屋全体の壁が一瞬で入れ替わる。まるでテレポートしたかのような錯視装置！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "錯視アート",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "建築",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-01-05",
+        "setup_commands": [
+            "/give @p sticky_piston 64",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p sticky_piston 64 | /time set noon | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 626,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, 錯視アート, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 30,
+        "title": "🪂 【バケツ以外】落下ダメージを完全にゼロにする新開発裏技5選",
+        "description": "有名な水バケツ(MLG)はもう古い！？ボート、ねじれツタ、大釜、さらにはスイートベリーの低木を使った新しい落下ダメージ無効化技術を実演！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "落下対策",
+            "マイクラ",
+            "youtubevideos",
+            "MLG",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-01-12",
+        "setup_commands": [
+            "/tp @p 0 320 0",
+            "/give @p boat 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/tp @p 0 320 0 | /give @p boat 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 749,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, マインクラフト"
+    },
+    {
+        "week": 31,
+        "title": "🖨️ 回路だけで動くマイクラ「2D全自動ドットプリンター」",
+        "description": "チェストに並べた色とりどりの羊毛をホッパーが読み取り、レッドストーンの信号順にピストンが押し出して地上に巨大なドット絵を自動構築する精密マシン！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "電子工作",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "プリンター",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-01-19",
+        "setup_commands": [
+            "/give @p redstone_repeater 64",
+            "/give @p blue_wool 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p redstone_repeater 64 | /give @p blue_wool 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 860,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, 電子工作, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 32,
+        "title": "💀 1秒に100匹湧く！地獄の最強モブ湧き処理トラップタワー",
+        "description": "湧き制限の限界を突く設計。落ちてきたクリーパーやゾンビを水流とピストントライデントで一瞬でミンチにする最高時速の経験値施設！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "トラップタワー",
+            "マインクラフト",
+            "ゲーム",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "効率厨",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-01-26",
+        "setup_commands": [
+            "/difficulty hard",
+            "/time set night"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/difficulty hard | /time set night | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 899,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, トラップタワー"
+    },
+    {
+        "week": 33,
+        "title": "🦅 エリトラ＋ロケット花火だけで世界一周するのに何分かかる？",
+        "description": "最大描画距離を設定し、最高速度をキープした状態で初期スポーン地点からマップの端、そして一周して戻ってくるまでの超高速旅情ロードムービー！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "スピードラン",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "エリトラ",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-02-02",
+        "setup_commands": [
+            "/give @p elytrachance 1",
+            "/give @p firework_rocket 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p elytrachance 1 | /give @p firework_rocket 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 859,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, スピードラン"
+    },
+    {
+        "week": 34,
+        "title": "🕸️ クモの巣だらけの廃坑に囚われたAI救出24時間タイムアタック",
+        "description": "ハサミなし、ブロック破壊禁止。身動きが取れない超巨大な廃坑の奥深くから、AIの経路探索アルゴリズムだけで脱出する壮大なシミュレーション！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "廃坑",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "脱出チャレンジ",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-02-09",
+        "setup_commands": [
+            "/worldedit fill ~-5 ~-5 ~-5 ~5 ~5 ~5 cobweb",
+            "/effect give @p slowness 9999"
+        ],
+        "action_commands": [
+            "Baritone ai explore"
+        ],
+        "ai_instructions": "/worldedit fill ~-5 ~-5 ~-5 ~5 ~5 ~5 cobweb | /effect give @p slowness 9999 | Baritone ai explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 874,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, テキパキパソコン, まいくら, minecraft, 廃坑"
+    },
+    {
+        "week": 35,
+        "title": "🏡 【建築】初心者でも10秒で作れるおしゃれすぎる豆腐モダンハウス",
+        "description": "ただの正方形の「豆腐ハウス」に、板ガラスと原木、そして水流を少し足すだけで超一流の高級モダン建築に変貌させる魔法のデザインテクニック！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "建築",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "おしゃれ建築",
+            "モダンハウス",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-02-16",
+        "setup_commands": [
+            "/give @p oak_log 64",
+            "/give @p glass_pane 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p oak_log 64 | /give @p glass_pane 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 873,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 建築, 実況者, テキパキパソコン, まいくら, minecraft, マインクラフト"
+    },
+    {
+        "week": 36,
+        "title": "⛸️ エンチャント「氷上歩行」ブーツを履いてマグマ湖の上を渡る裏技",
+        "description": "通常は水の上しか凍らせられないはずのエンチャント。あるコマンドと特定の環境を組み合わせることで、溶岩すらカチコチに凍らせて疾走するバグ技検証！",
+        "hashtags": [
+            "実況者",
+            "裏技検証",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "氷上歩行",
+            "溶岩",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-02-23",
+        "setup_commands": [
+            "/fill ~-5 60 ~-5 ~5 60 ~5 lava",
+            "/give @p diamond_boots{Enchantments:[{id:frost_walker,lvl:2}]} 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill ~-5 60 ~-5 ~5 60 ~5 lava | /give @p diamond_boots{Enchantments:[{id:frost_walker,lvl:2}]} 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 892,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, 裏技検証, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 37,
+        "title": "🧗 【絶対クリア不可】AI vs 最強のプロゲーマーが作った極限アスレ",
+        "description": "ジャンプのタイミングが1フレームでもずれると即溶岩に落ちる。人間の反射神経の限界を超えるコースを、AIがミリ秒単位のキー入力で完全制覇！",
+        "hashtags": [
+            "実況者",
+            "アスレチック",
+            "テキパキパソコン",
+            "プロゲーマー",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-03-02",
+        "setup_commands": [
+            "/time set day",
+            "/worldedit fill 0 60 0 10 60 10 lava"
+        ],
+        "action_commands": [
+            "Baritone ai parkour"
+        ],
+        "ai_instructions": "/time set day | /worldedit fill 0 60 0 10 60 10 lava | Baritone ai parkour",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 654,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, アスレチック, テキパキパソコン, プロゲーマー, まいくら"
+    },
+    {
+        "week": 38,
+        "title": "🐝 ハチを怒らせずにハチミツを完全自動で回収し続ける量産工場",
+        "description": "ディスペンサーにハサミとガラス瓶を格納し、ハチの巣箱の怒りゲージをレッドストーンで自動検知してノーダメージ回収するハニー量産計画！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "ハチミツ回収",
+            "マインクラフト",
+            "ゲーム",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "農業",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-03-09",
+        "setup_commands": [
+            "/give @p beehive 10",
+            "/give @p glass_bottle 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p beehive 10 | /give @p glass_bottle 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 773,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, ハチミツ回収"
+    },
+    {
+        "week": 39,
+        "title": "🙃 【検証】もしマイクラの世界で「重力」が上下反転したら？",
+        "description": "コマンドブロックを駆使して、プレイヤーの足元を常に「天井」へと吸い寄せるシステム。視界が逆さまになったマイクラでエンドラは倒せるか！？",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "変態プレイ",
+            "コマンドブロック",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "重力反転",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-03-16",
+        "setup_commands": [
+            "/effect give @p levitation 9999",
+            "/time set day"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/effect give @p levitation 9999 | /time set day | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 799,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, 変態プレイ, コマンドブロック, まいくら"
+    },
+    {
+        "week": 40,
+        "title": "🔑 完全にセキュリティ管理された「4桁ダイヤルパスワード扉」",
+        "description": "レッドストーンの信号の長さ(強度)を応用し、指定された順番にレバーを動かさないと絶対に開かない最強セキュリティの暗証番号ドア！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "セキュリティ",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "パスワードドア",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-03-23",
+        "setup_commands": [
+            "/give @p lever 10",
+            "/give @p redstone_wire 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p lever 10 | /give @p redstone_wire 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 738,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 41,
+        "title": "🔥 地獄ネザーの底から地上1000mまで爆破で飛び上がる垂直エレベーター",
+        "description": "ネザーの岩盤を突破し、大量のエンドクリスタル爆発のベクトルを一点に集中させて、一撃で天界まで吹っ飛ぶ最恐ショート検証！",
+        "hashtags": [
+            "実況者",
+            "ネザー突破",
+            "エンドクリスタル",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "爆破",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-03-30",
+        "setup_commands": [
+            "/give @p end_crystal 64",
+            "/tp @p 0 5 0"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p end_crystal 64 | /tp @p 0 5 0 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 786,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, ネザー突破, エンドクリスタル, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 42,
+        "title": "🦖 AIに整地を任せたら地下から謎の「古代生物の骨」が大量露出したシード値",
+        "description": "不気味なシード値の平原をBaritone AIに限界まで掘削させたら、驚くほど高確率で化石(Fossil)ブロックが出現する伝説の座標を発見！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "ミステリー",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "化石",
+            "シード値",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-04-06",
+        "setup_commands": [
+            "/time set noon",
+            "/locate structure fossil"
+        ],
+        "action_commands": [
+            "Baritone ai explore"
+        ],
+        "ai_instructions": "/time set noon | /locate structure fossil | Baritone ai explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 702,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, テキパキパソコン, ミステリー, まいくら, minecraft"
+    },
+    {
+        "week": 43,
+        "title": "🌾 世界一コンパクトな1x1マスの「全自動高速小麦収穫機」",
+        "description": "骨粉ディスペンサー、観察者、そして粘着ピストンの挙動を1マスに凝縮。ボタンを押しっぱなしにするだけで小麦が無限に増える超極小マシン！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "自動化",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "小麦収穫機",
+            "youtubevideos",
+            "超小型回路",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-04-13",
+        "setup_commands": [
+            "/give @p bone_meal 64",
+            "/give @p wheat_seeds 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p bone_meal 64 | /give @p wheat_seeds 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 618,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, マインクラフト"
+    },
+    {
+        "week": 44,
+        "title": "🎧 【音だけ】画面を完全オフにしてマイクラの環境音だけで夜を越す",
+        "description": "足音、ゾンビのうめき声、クリーパーの着火音「シュー」の定位だけを頼りに、暗闇の中で的確に剣を振って生き延びる超感覚サバイバル！",
+        "hashtags": [
+            "実況者",
+            "縛りマルチ",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "音だけサバイバル",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-04-20",
+        "setup_commands": [
+            "/effect give @p blindness 9999",
+            "/difficulty hard"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/effect give @p blindness 9999 | /difficulty hard | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 752,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, 縛りマルチ, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 45,
+        "title": "💎 空中に浮かぶガラスだけで作られた1000mの「空中回廊」をダッシュ",
+        "description": "一歩踏み外せばはるか地上へ真っ逆さま。AIにガラスブロックを足元に自動生成させながら、時速50キロで走り抜けられるか極限ラン！",
+        "hashtags": [
+            "神プレイ",
+            "実況者",
+            "テキパキパソコン",
+            "空中アスレ",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-04-27",
+        "setup_commands": [
+            "/worldedit fill 0 150 0 100 150 0 glass",
+            "/tp @p 0 151 0"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/worldedit fill 0 150 0 100 150 0 glass | /tp @p 0 151 0 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 824,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 神プレイ, 実況者, テキパキパソコン, 空中アスレ, まいくら"
+    },
+    {
+        "week": 46,
+        "title": "🦖 1秒ごとにすべてのモブが超巨大化するカオス世界サバイバル",
+        "description": "時間が経つにつれてチビゾンビがビル並みの大きさになり、ハチがネザーゲートよりデカくなる！サイズバランス崩壊コマンドの遊び方！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "カオス検証",
+            "マイクラ",
+            "youtubevideos",
+            "巨大化コマンド",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-05-04",
+        "setup_commands": [
+            "/attribute @p generic.scale base set 5",
+            "/summon pig ~ ~ ~"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/attribute @p generic.scale base set 5 | /summon pig ~ ~ ~ | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 867,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, まいくら, minecraft, マインクラフト"
+    },
+    {
+        "week": 47,
+        "title": "📦 ボタン1つで荷物が拠点に飛んでくる全自動チェストトロッコ便",
+        "description": "ホッパーのアイテム搬入をセンサーが検知すると自動で発車し、荷降ろしが完了すると勝手に戻ってくる超近代的な配送流通システム！",
+        "hashtags": [
+            "Redstone",
+            "実況者",
+            "自動配送",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "トロッコ鉄道",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-05-11",
+        "setup_commands": [
+            "/give @p detector_rail 10",
+            "/give @p minecart_with_chest 2"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p detector_rail 10 | /give @p minecart_with_chest 2 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 785,
+        "tags": "Minecraft, マイクラ, ゲーム実況, Redstone, 実況者, 自動配送, テキパキパソコン, まいくら"
+    },
+    {
+        "week": 48,
+        "title": "🌋 溶岩の底に隠された「ダイヤモンドブロック」を回収せよ！",
+        "description": "耐火のポーションなし。砂利ブロックを瞬時に落として溶岩を消去し、底にあるお宝だけをノーダメージで安全にすくい取るハッカー級プロ技！",
+        "hashtags": [
+            "実況者",
+            "テキパキパソコン",
+            "溶岩消去",
+            "まいくら",
+            "minecraft",
+            "サバイバル術",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "ダイヤモンド",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-05-18",
+        "setup_commands": [
+            "/fill ~-3 60 ~-3 ~3 60 ~3 lava",
+            "/give @p gravel 64"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/fill ~-3 60 ~-3 ~3 60 ~3 lava | /give @p gravel 64 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 649,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, テキパキパソコン, 溶岩消去, まいくら, minecraft"
+    },
+    {
+        "week": 49,
+        "title": "🏮 レッドストーンダスト10,000個で世界一長い導火線を作ってみた",
+        "description": "端っこにレッドストーントーチを立ててから、1万マス先のTNTが爆発するまでに何分かかる？究極のピタゴラスイッチ点火！",
+        "hashtags": [
+            "実況者",
+            "ピタゴラ",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "レッドストーン",
+            "マイクラ",
+            "TNT爆破",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-05-25",
+        "setup_commands": [
+            "/give @p redstone_wire 64",
+            "/give @p tnt 1"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p redstone_wire 64 | /give @p tnt 1 | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 638,
+        "tags": "Minecraft, マイクラ, ゲーム実況, レッドストーン, 実況者, ピタゴラ, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 50,
+        "title": "🧭 【限界】描画距離を最大にしてAIに超長距離マッピングを命令した結果",
+        "description": "メモリ使用率が上限に達する極限状態で、AIが一切迷うことなく10,000ブロック離れた座標まで自動移動する限界ベンチマーク計測！",
+        "hashtags": [
+            "実況者",
+            "限界突破",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "BaritoneAI",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "ベンチマーク",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-06-01",
+        "setup_commands": [
+            "/gamerule randomTickSpeed 1",
+            "/time set noon"
+        ],
+        "action_commands": [
+            "Baritone ai goto 10000 64 10000"
+        ],
+        "ai_instructions": "/gamerule randomTickSpeed 1 | /time set noon | Baritone ai goto 10000 64 10000",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 748,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, 限界突破, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 51,
+        "title": "🏰 全てのブロックが金とダイヤ！成金サバイバルを1時間やった成果",
+        "description": "木材や石の代わりに、金ブロックとダイヤモンドブロックしか自然生成されない富豪シード値。1時間放置して集まる資産価値を大公開！",
+        "hashtags": [
+            "実況者",
+            "サバイバル",
+            "テキパキパソコン",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "検証",
+            "ダイヤだらけ",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-06-08",
+        "setup_commands": [
+            "/give @p netherite_pickaxe 1",
+            "/time set day"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/give @p netherite_pickaxe 1 | /time set day | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 782,
+        "tags": "Minecraft, マイクラ, ゲーム実況, 実況者, サバイバル, テキパキパソコン, まいくら, minecraft"
+    },
+    {
+        "week": 52,
+        "title": "【100万人記念】AIが1時間で巨大都市を建設する神回",
+        "description": "1年間の全ての挑戦（激ムズ水バケツ、無限列車、AI建築など）のダイジェストと、没になった爆笑お蔵入りシーンを完全大放出SP！",
+        "hashtags": [
+            "実況者",
+            "1年間記念",
+            "100万人記念",
+            "テキパキパソコン",
+            "総集編",
+            "まいくら",
+            "minecraft",
+            "マインクラフト",
+            "ゲーム",
+            "ゲーム実況",
+            "実況",
+            "マイクラ",
+            "youtubevideos",
+            "最終回",
+            "youtubevideo"
+        ],
+        "scheduled_at": "2027-06-15",
+        "setup_commands": [
+            "/time set noon",
+            "/weather clear"
+        ],
+        "action_commands": [
+            "explore"
+        ],
+        "ai_instructions": "/time set noon | /weather clear | explore",
+        "status": "failed",
+        "video_path": null,
+        "youtube_id": null,
+        "is_shorts": false,
+        "duration_sec": 3600,
+        "tags": "Minecraft, マイクラ, ゲーム実況, AI, 実況者, 1年間記念, 100万人記念, テキパキパソコン, 総集編"
+    }
+]

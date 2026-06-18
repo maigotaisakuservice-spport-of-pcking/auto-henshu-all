@@ -1,0 +1,62 @@
+name: Daily Video Production
+on:
+  schedule:
+    - cron: '10 8 * * *' # Every day at 08:10 UTC (10 mins after YouTube API Quota reset at Midnight Pacific Time)
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: write
+
+jobs:
+  produce-and-upload:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 8
+        uses: actions/setup-java@v4
+        with:
+          java-version: '8'
+          distribution: 'temurin'
+
+      - name: Set up Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb ffmpeg curl
+          pip install --upgrade pip
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib llama-cpp-python
+
+      - name: Minecraft Setup
+        run: bash scripts/setup_mc.sh
+
+      - name: Download Llama-3 Model
+        run: |
+          mkdir -p models
+          if [ ! -f "models/llama-3-8b-instruct.Q4_K_M.gguf" ]; then
+            curl -L "https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q4_K_M.gguf" -o models/llama-3-8b-instruct.Q4_K_M.gguf
+          fi
+
+      - name: Produce Videos (Batch of 5)
+        run: python scripts/produce_video.py
+        env:
+          MODEL_PATH: "models/llama-3-8b-instruct.Q4_K_M.gguf"
+
+      - name: Upload to YouTube
+        run: python scripts/upload_youtube.py
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_SERVICE_ACCOUNT_JSON: ${{ secrets.YOUTUBE_SERVICE_ACCOUNT_JSON }}
+
+      - name: Commit and Push Updated Plan
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add planning.json
+          git commit -m "chore: update planning.json after production [skip ci]" || echo "No changes to commit"
+          git push
